@@ -1,0 +1,28 @@
+{
+  "opening": {
+    "symbol": 716,
+    "source": "OtherMat_v9 DefineSpriteTag 716 export.scene.Opening; child 707 illustration (49-frame alpha fade-in) + child 711 story text (sprite 710, 286 frames)",
+    "duration": 11.916666666666666,
+    "fade_in": 2.0416666666666665,
+    "bg": "opening/bg.png",
+    "window": [320, 73, 300, 444],
+    "texts": [
+      {"image": "opening/text.png", "x": 321, "y0": 676.6, "vy": 81.6, "t0": 0.0}
+    ],
+    "skip": true
+  },
+  "ending": {
+    "symbol": 702,
+    "source": "OtherMat_v9 DefineSpriteTag 702 export.scene.Ending; shape 693 victory art + child 701 credits (sprites 696/698/700, 1205 frames). y0 derives from the original 701 frame exports' first visible rows: text_a frame 26, text_b frame 102, text_c frame 454, window bottom screen y=465.",
+    "duration": 50.208333333333336,
+    "fade_in": 0.0,
+    "bg": "ending/bg.png",
+    "window": [47, 125, 326, 340],
+    "texts": [
+      {"image": "ending/text_a.png", "x": 58, "y0": 541.25, "vy": 73.2, "t0": 0.0},
+      {"image": "ending/text_b.png", "x": 47, "y0": 497.8, "vy": 49.2, "t0": 3.5416666666666665},
+      {"image": "ending/text_c.png", "x": 58, "y0": 771.0, "vy": 54.0, "t0": 13.208333333333334}
+    ],
+    "skip": false
+  }
+}

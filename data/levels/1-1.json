@@ -1,0 +1,518 @@
+{
+ "id": "1-1",
+ "name": "花果山",
+ "width": 4956.1,
+ "ground_y": 518.6,
+ "ground_art_delta": -10.0,
+ "player_start": {
+  "x": 200,
+  "y": 200
+ },
+ "background": "bg/1-1.png",
+ "background_x_offset": -245.0,
+ "background_y": -72.0,
+ "background_bbox": [
+  215.0,
+  142.0,
+  4956.1,
+  632.1
+ ],
+ "far_background": "bg/far1.png",
+ "ground": "",
+ "music": "bg1",
+ "camera_lock_offset": 900,
+ "stops": [
+  {
+   "idx": 0,
+   "x": 1139.9,
+   "y": 332.9,
+   "between_rand_l": 1450
+  },
+  {
+   "idx": 1,
+   "x": 1810.0,
+   "y": 360.9,
+   "between_rand_l": 1450
+  },
+  {
+   "idx": 2,
+   "x": 2970.2,
+   "y": 362.9,
+   "between_rand_l": 1450
+  },
+  {
+   "idx": 3,
+   "x": 3413.5,
+   "y": 380.1,
+   "between_rand_l": 1450
+  },
+  {
+   "idx": 4,
+   "x": 4202.9,
+   "y": 391.6,
+   "between_rand_l": 1450
+  }
+ ],
+ "spawns": [
+  {
+   "x": 1256.4,
+   "y": 377.3,
+   "enemy_type": 1,
+   "total": 3,
+   "interval": 1.0,
+   "delay": 2.0,
+   "stop_idx": 0,
+   "random": false
+  },
+  {
+   "x": 806.4,
+   "y": 359.4,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 1.0,
+   "delay": 5.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 1863.0,
+   "y": 428.6,
+   "enemy_type": 1,
+   "total": 5,
+   "interval": 1.0,
+   "delay": 2.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 1863.0,
+   "y": 377.2,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 1.0,
+   "delay": 5.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 3485.2,
+   "y": 383.3,
+   "enemy_type": 1,
+   "total": 5,
+   "interval": 1.0,
+   "delay": 2.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 3570.8,
+   "y": 383.3,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 1.0,
+   "delay": 3.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 3520.2,
+   "y": 383.3,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 1.0,
+   "delay": 5.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 1705.3,
+   "y": 369.4,
+   "enemy_type": 2,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 4.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 2059.7,
+   "y": 284.4,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 4295.6,
+   "y": 376.4,
+   "enemy_type": 3,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 4,
+   "random": false
+  },
+  {
+   "x": 2349.8,
+   "y": 116.8,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 2633.4,
+   "y": 291.6,
+   "enemy_type": 2,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 3772.8,
+   "y": 382.2,
+   "enemy_type": 2,
+   "total": 5,
+   "interval": 1.0,
+   "delay": 8.0,
+   "stop_idx": 4,
+   "random": false
+  },
+  {
+   "x": 4590.1,
+   "y": 354.4,
+   "enemy_type": 2,
+   "total": 4,
+   "interval": 1.0,
+   "delay": 3.0,
+   "stop_idx": 4,
+   "random": false
+  }
+ ],
+ "boss": {
+  "x": 4295.6,
+  "y": 376.4,
+  "enemy_type": 3,
+  "stop_idx": 4
+ },
+ "portal": {
+  "x": 4099.1,
+  "y": 459.4,
+  "w": 186.0,
+  "h": 165.0
+ },
+ "walls": [
+  {
+   "x": -17.7,
+   "y": 518.6,
+   "w": 4895.4,
+   "h": 19.9,
+   "type": "solid"
+  },
+  {
+   "x": 5.9,
+   "y": -468.3,
+   "w": 60.0,
+   "h": 1000.0,
+   "type": "solid"
+  },
+  {
+   "x": 4776.0,
+   "y": -411.5,
+   "w": 115.3,
+   "h": 1000.0,
+   "type": "solid"
+  },
+  {
+   "x": 1067.3,
+   "y": 444.5,
+   "w": 206.7,
+   "h": 19.9,
+   "type": "terrain"
+  },
+  {
+   "x": 4494.4,
+   "y": 448.7,
+   "w": 206.8,
+   "h": 19.9,
+   "type": "terrain"
+  },
+  {
+   "x": 1550.8,
+   "y": 444.7,
+   "w": 206.8,
+   "h": 20.0,
+   "type": "terrain"
+  },
+  {
+   "x": 1943.5,
+   "y": 359.2,
+   "w": 242.0,
+   "h": 20.0,
+   "type": "oneway"
+  },
+  {
+   "x": 2512.5,
+   "y": 358.8,
+   "w": 242.1,
+   "h": 20.0,
+   "type": "oneway"
+  },
+  {
+   "x": 2220.7,
+   "y": 202.8,
+   "w": 242.0,
+   "h": 20.0,
+   "type": "oneway"
+  }
+ ],
+ "terrain": [],
+ "slopes": [
+  {
+   "x0": 992.9,
+   "y0": 518.7,
+   "x1": 1067.2,
+   "y1": 444.5,
+   "rot": -45.0,
+   "width": 105.0,
+   "height": 20.0
+  },
+  {
+   "x0": 1274.5,
+   "y0": 444.3,
+   "x1": 1348.7,
+   "y1": 518.6,
+   "rot": 45.0,
+   "width": 105.0,
+   "height": 20.0
+  },
+  {
+   "x0": 4421.2,
+   "y0": 521.8,
+   "x1": 4495.4,
+   "y1": 447.6,
+   "rot": -45.0,
+   "width": 105.0,
+   "height": 20.0
+  },
+  {
+   "x0": 4701.7,
+   "y0": 447.4,
+   "x1": 4776.0,
+   "y1": 521.7,
+   "rot": 45.0,
+   "width": 105.0,
+   "height": 20.0
+  },
+  {
+   "x0": 1476.5,
+   "y0": 519.0,
+   "x1": 1550.7,
+   "y1": 444.7,
+   "rot": -45.0,
+   "width": 105.0,
+   "height": 20.0
+  },
+  {
+   "x0": 1758.0,
+   "y0": 444.6,
+   "x1": 1832.3,
+   "y1": 518.8,
+   "rot": 45.0,
+   "width": 105.0,
+   "height": 20.0
+  }
+ ],
+ "foreground": "",
+ "foreground_x": 0,
+ "foreground_y": 0,
+ "boss_enemy_type": 3,
+ "dungeon": null,
+ "deco": [
+  {
+   "kind": "shape",
+   "img": "bg/shapes/60.png",
+   "x": -8.35,
+   "y": 431.65,
+   "depth": 71,
+   "tag": "ground"
+  },
+  {
+   "kind": "shape",
+   "img": "bg/shapes/56.png",
+   "x": 1931.5,
+   "y": 348.3,
+   "depth": 3,
+   "tag": "deco56"
+  },
+  {
+   "kind": "shape",
+   "img": "bg/shapes/56.png",
+   "x": 2503.5,
+   "y": 349.8,
+   "depth": 7,
+   "tag": "deco56"
+  },
+  {
+   "kind": "shape",
+   "img": "bg/shapes/56.png",
+   "x": 2210.4,
+   "y": 192.5,
+   "depth": 45,
+   "tag": "deco56"
+  }
+ ],
+ "thorns": [],
+ "water": [],
+ "turnbacks": [
+  {
+   "x": 1951.0,
+   "y": 285.8,
+   "w": 15.0,
+   "h": 150.1,
+   "depth": 106
+  },
+  {
+   "x": 2178.0,
+   "y": 285.8,
+   "w": 15.0,
+   "h": 150.1,
+   "depth": 109
+  },
+  {
+   "x": 2228.2,
+   "y": 130.8,
+   "w": 15.0,
+   "h": 150.1,
+   "depth": 112
+  },
+  {
+   "x": 2455.2,
+   "y": 131.8,
+   "w": 15.0,
+   "h": 150.1,
+   "depth": 115
+  },
+  {
+   "x": 2520.1,
+   "y": 288.8,
+   "w": 15.1,
+   "h": 150.1,
+   "depth": 118
+  },
+  {
+   "x": 2747.1,
+   "y": 290.8,
+   "w": 15.1,
+   "h": 150.1,
+   "depth": 121
+  }
+ ],
+ "no_continue": [],
+ "disappear_points": [
+  {
+   "x": 1257.5,
+   "y": 381.3,
+   "w": 56.5,
+   "h": 73.0,
+   "depth": 373
+  },
+  {
+   "x": 807.5,
+   "y": 363.4,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 377
+  },
+  {
+   "x": 1864.2,
+   "y": 432.6,
+   "w": 56.5,
+   "h": 73.0,
+   "depth": 389
+  },
+  {
+   "x": 1864.2,
+   "y": 381.3,
+   "w": 56.5,
+   "h": 73.0,
+   "depth": 409
+  },
+  {
+   "x": 3486.3,
+   "y": 387.3,
+   "w": 56.5,
+   "h": 73.0,
+   "depth": 461
+  },
+  {
+   "x": 3571.9,
+   "y": 387.3,
+   "w": 56.5,
+   "h": 73.0,
+   "depth": 465
+  },
+  {
+   "x": 3521.3,
+   "y": 387.3,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 469
+  },
+  {
+   "x": 1706.5,
+   "y": 373.4,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 473
+  },
+  {
+   "x": 2060.8,
+   "y": 288.4,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 481
+  },
+  {
+   "x": 4296.8,
+   "y": 380.4,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 485
+  },
+  {
+   "x": 2350.9,
+   "y": 120.7,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 489
+  },
+  {
+   "x": 2634.6,
+   "y": 295.6,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 493
+  },
+  {
+   "x": 3774.0,
+   "y": 386.2,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 505
+  },
+  {
+   "x": 4591.2,
+   "y": 358.4,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 509
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "id": "9-1",
+ "name": "水晶宫",
+ "width": 1300.0,
+ "ground_y": 512.1,
+ "ground_art_delta": -4.5,
+ "player_start": {
+  "x": 200,
+  "y": 200
+ },
+ "background": "bg/9-1.png",
+ "background_x_offset": -245.0,
+ "background_y": -72.0,
+ "background_bbox": [
+  254.0,
+  98.0,
+  943.2,
+  503.9
+ ],
+ "far_background": "bg/far3.png",
+ "ground": "",
+ "music": "bg4",
+ "camera_lock_offset": 900,
+ "stops": [
+  {
+   "idx": 0,
+   "x": 1044.2,
+   "y": 304.9,
+   "between_rand_l": 940
+  }
+ ],
+ "spawns": [
+  {
+   "x": 947.6,
+   "y": 285.8,
+   "enemy_type": 26,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 0,
+   "random": false
+  }
+ ],
+ "boss": {
+  "x": 947.6,
+  "y": 285.8,
+  "enemy_type": 26,
+  "stop_idx": 0
+ },
+ "portal": {
+  "x": 814.8,
+  "y": 457.6,
+  "w": 186.0,
+  "h": 165.0
+ },
+ "walls": [
+  {
+   "x": 30.5,
+   "y": 512.1,
+   "w": 1200.0,
+   "h": 19.9,
+   "type": "solid"
+  },
+  {
+   "x": 1161.8,
+   "y": -471.9,
+   "w": 60.1,
+   "h": 999.9,
+   "type": "solid"
+  },
+  {
+   "x": -17.4,
+   "y": -467.9,
+   "w": 60.0,
+   "h": 999.9,
+   "type": "solid"
+  }
+ ],
+ "terrain": [],
+ "slopes": [],
+ "foreground": "",
+ "foreground_x": 0,
+ "foreground_y": 0,
+ "boss_enemy_type": 26,
+ "dungeon": null,
+ "deco": [
+  {
+   "kind": "shape",
+   "img": "bg/shapes/127.png",
+   "x": -43.4,
+   "y": 506.1,
+   "depth": 7,
+   "tag": "ground"
+  }
+ ],
+ "thorns": [],
+ "water": [],
+ "turnbacks": [],
+ "no_continue": [],
+ "disappear_points": [
+  {
+   "x": 948.8,
+   "y": 289.7,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 21
+  }
+ ]
+}

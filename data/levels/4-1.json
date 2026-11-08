@@ -1,0 +1,144 @@
+{
+ "id": "4-1",
+ "name": "牛魔谷",
+ "width": 1999.9,
+ "ground_y": 506.6,
+ "ground_art_delta": -4.2,
+ "player_start": {
+  "x": 200,
+  "y": 200
+ },
+ "background": "bg/4-1.png",
+ "background_x_offset": -245.0,
+ "background_y": -72.0,
+ "background_bbox": [
+  215.0,
+  78.0,
+  1880.0,
+  590.0
+ ],
+ "far_background": "bg/far4.png",
+ "ground": "",
+ "music": "bg4",
+ "camera_lock_offset": 900,
+ "stops": [
+  {
+   "idx": 0,
+   "x": 949.0,
+   "y": 219.9,
+   "between_rand_l": 940
+  },
+  {
+   "idx": 1,
+   "x": 1815.0,
+   "y": 243.5,
+   "between_rand_l": 940
+  }
+ ],
+ "spawns": [
+  {
+   "x": 1730.8,
+   "y": 346.1,
+   "enemy_type": 22,
+   "total": 1,
+   "interval": 1.0,
+   "delay": 2.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 872.9,
+   "y": 371.9,
+   "enemy_type": 25,
+   "total": 10,
+   "interval": 1.0,
+   "delay": 2.0,
+   "stop_idx": 0,
+   "random": false
+  },
+  {
+   "x": 159.9,
+   "y": 375.9,
+   "enemy_type": 25,
+   "total": 20,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 0,
+   "random": false
+  }
+ ],
+ "boss": {
+  "x": 1730.8,
+  "y": 346.1,
+  "enemy_type": 22,
+  "stop_idx": 1
+ },
+ "portal": null,
+ "walls": [
+  {
+   "x": -49.8,
+   "y": 506.6,
+   "w": 1999.9,
+   "h": 19.9,
+   "type": "solid"
+  },
+  {
+   "x": -8.7,
+   "y": -474.5,
+   "w": 60.1,
+   "h": 999.9,
+   "type": "solid"
+  },
+  {
+   "x": 1864.8,
+   "y": -485.4,
+   "w": 60.1,
+   "h": 999.9,
+   "type": "solid"
+  }
+ ],
+ "terrain": [],
+ "slopes": [],
+ "foreground": "",
+ "foreground_x": 0,
+ "foreground_y": 0,
+ "boss_enemy_type": 22,
+ "dungeon": null,
+ "deco": [
+  {
+   "kind": "shape",
+   "img": "bg/shapes/125.png",
+   "x": -16.05,
+   "y": 501.45,
+   "depth": 3,
+   "tag": "ground"
+  }
+ ],
+ "thorns": [],
+ "water": [],
+ "turnbacks": [],
+ "no_continue": [],
+ "disappear_points": [
+  {
+   "x": 1731.9,
+   "y": 350.1,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 293
+  },
+  {
+   "x": 874.0,
+   "y": 375.9,
+   "w": 56.6,
+   "h": 73.0,
+   "depth": 301
+  },
+  {
+   "x": 161.1,
+   "y": 379.9,
+   "w": 56.5,
+   "h": 73.0,
+   "depth": 305
+  }
+ ]
+}

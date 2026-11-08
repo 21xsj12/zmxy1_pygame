@@ -1,0 +1,7425 @@
+{
+ "1": {
+  "id": 1,
+  "name": "怪物1",
+  "cls": "Monster1",
+  "module": "Monster_v1",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 50,
+  "def": 0,
+  "exp": 5,
+  "gxp": 1,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 80.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ccxzf",
+   "ccxzg",
+   "ccjs",
+   "ccsmz"
+  ],
+  "attackPowers": [
+   5
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 5.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 40.0,
+   "h": 60.0,
+   "ox": -0.05,
+   "oy": 0.45
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 24,
+    "loop": false,
+    "events": [
+     {
+      "frame": 24,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 14,
+      "to": 24
+     }
+    ]
+   },
+   "dead": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 1,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "afterHurt": {
+    "frames": 8,
+    "loop": false,
+    "events": [
+     {
+      "frame": 8,
+      "ops": [
+       {
+        "op": "end",
+        "state": "walk"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "passive"
+  },
+  "specials": [
+   "passive_until_hit"
+  ],
+  "bullets": {},
+  "w": 30,
+  "h": 57,
+  "level_scale": null,
+  "colipse_bottom": 30.451
+ },
+ "2": {
+  "id": 2,
+  "name": "怪物2",
+  "cls": "Monster2",
+  "module": "Monster_v1",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 100,
+  "def": 1,
+  "exp": 6,
+  "gxp": 2,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 110.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ccxzf",
+   "ccxzg",
+   "ccjs",
+   "ccsmz"
+  ],
+  "attackPowers": [
+   12
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 12.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 42.0,
+   "h": 82.0,
+   "ox": 0.55,
+   "oy": -0.45
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 12,
+    "loop": false,
+    "events": [
+     {
+      "frame": 12,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 9
+     }
+    ]
+   },
+   "dead": {
+    "frames": 22,
+    "loop": false,
+    "events": [
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "afterHurt": {
+    "frames": 10,
+    "loop": false,
+    "events": [
+     {
+      "frame": 10,
+      "ops": [
+       {
+        "op": "end",
+        "state": "walk"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "melee"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 37,
+  "h": 84,
+  "level_scale": null,
+  "colipse_bottom": 40.549
+ },
+ "3": {
+  "id": 3,
+  "name": "大猩猩",
+  "cls": "Monster3",
+  "module": "Monster_v1",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 900,
+  "def": 5,
+  "exp": 25,
+  "gxp": 3,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ccxzf",
+   "ccxzg",
+   "ccjs",
+   "ccsmz"
+  ],
+  "attackPowers": [
+   20
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 20.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 110.0,
+   "h": 110.0,
+   "ox": 0.5,
+   "oy": -0.05
+  },
+  "actions": {
+   "walk": {
+    "frames": 20,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 17,
+    "loop": false,
+    "events": [
+     {
+      "frame": 17,
+      "ops": [
+       {
+        "op": "end",
+        "state": "walk"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 5,
+      "to": 17
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 20,
+    "loop": false,
+    "events": [
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "afterHurt": {
+    "frames": 7,
+    "loop": false,
+    "events": [
+     {
+      "frame": 7,
+      "ops": [
+       {
+        "op": "end",
+        "state": "walk"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "melee"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 78,
+  "h": 105,
+  "level_scale": {
+   "kind": "level_is",
+   "level": "1-1",
+   "true": {
+    "hp": 900,
+    "exp": 25,
+    "gxp": 3,
+    "is_boss": true,
+    "falls": false
+   },
+   "false": {
+    "hp": 300,
+    "exp": 7,
+    "gxp": 3,
+    "is_boss": false,
+    "falls": true
+   }
+  },
+  "colipse_bottom": 54.949
+ },
+ "4": {
+  "id": 4,
+  "name": "彌猴王",
+  "cls": "Monster4",
+  "module": "Monster_v1",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 1500,
+  "def": 5,
+  "exp": 25,
+  "gxp": 20,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.4,
+  "fallList": [
+   "dslj"
+  ],
+  "attackPowers": [
+   20,
+   30
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 30.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 20.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 50,
+    "interval": 999
+   },
+   "hit3": {
+    "power": 20.0,
+    "kind": "magic",
+    "kb": [
+     15.0,
+     0.0
+    ],
+    "hit_max": 40,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 59.99,
+   "h": 120.0,
+   "ox": 0.7,
+   "oy": -0.05
+  },
+  "actions": {
+   "walk": {
+    "frames": 12,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit3": {
+    "frames": 53,
+    "loop": false,
+    "events": [
+     {
+      "frame": 4,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit3"
+       }
+      ]
+     },
+     {
+      "frame": 53,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit2": {
+    "frames": 76,
+    "loop": false,
+    "events": [
+     {
+      "frame": 5,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 5
+       }
+      ]
+     },
+     {
+      "frame": 8,
+      "ops": [
+       {
+        "op": "shake",
+        "value": 5
+       }
+      ]
+     },
+     {
+      "frame": 11,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 5
+       }
+      ]
+     },
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "shake",
+        "value": 5
+       }
+      ]
+     },
+     {
+      "frame": 16,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 10
+       }
+      ]
+     },
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 10
+       }
+      ]
+     },
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "shake",
+        "value": 10
+       }
+      ]
+     },
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 10
+       }
+      ]
+     },
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 10
+       }
+      ]
+     },
+     {
+      "frame": 32,
+      "ops": [
+       {
+        "op": "shake",
+        "value": 10
+       }
+      ]
+     },
+     {
+      "frame": 35,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "frame": 41,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "frame": 46,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "frame": 52,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "frame": 58,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "frame": 65,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "shake",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "frame": 76,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 5,
+      "to": 34
+     },
+     {
+      "from": 35,
+      "to": 76
+     }
+    ]
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 11,
+    "loop": false,
+    "events": [
+     {
+      "frame": 11,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "walk"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 17,
+    "loop": false,
+    "events": [
+     {
+      "frame": 17,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 17
+     }
+    ]
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 1,
+      "ops": [
+       {
+        "op": "stop"
+       }
+      ]
+     },
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "tiers": [
+    {
+     "min_dx": 151,
+     "skill": {
+      "slot": 1,
+      "cd": 180,
+      "action": "hit3"
+     }
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 150,
+     "mod": 24,
+     "skill": {
+      "slot": 2,
+      "cd": 260,
+      "action": "hit2",
+      "father": 76
+     }
+    }
+   ]
+  },
+  "specials": [],
+  "bullets": {
+   "hit3": {
+    "clip": "bullet_boss2",
+    "frame": 4,
+    "offset": [
+     0,
+     0
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 2.042,
+    "radius": 45,
+    "rect_frames": [
+     [
+      -11.1,
+      -52.9,
+      89.7,
+      120.1
+     ],
+     [
+      -11.1,
+      -52.9,
+      89.7,
+      120.1
+     ],
+     [
+      -22.4,
+      -66.9,
+      135.5,
+      135.5
+     ],
+     [
+      -22.4,
+      -66.9,
+      135.5,
+      135.5
+     ],
+     [
+      -21.7,
+      -65.8,
+      134.2,
+      134.7
+     ],
+     [
+      -21.7,
+      -65.8,
+      134.2,
+      134.7
+     ],
+     [
+      -22.2,
+      -65.8,
+      135.0,
+      134.7
+     ],
+     [
+      -22.2,
+      -65.8,
+      135.0,
+      134.7
+     ],
+     [
+      -11.1,
+      -52.9,
+      89.7,
+      120.1
+     ],
+     [
+      -11.1,
+      -52.9,
+      89.7,
+      120.1
+     ],
+     [
+      -22.4,
+      -66.9,
+      135.5,
+      135.5
+     ],
+     [
+      -22.4,
+      -66.9,
+      135.5,
+      135.5
+     ],
+     [
+      -21.7,
+      -65.8,
+      134.2,
+      134.7
+     ],
+     [
+      -21.7,
+      -65.8,
+      134.2,
+      134.7
+     ],
+     [
+      -22.2,
+      -65.8,
+      135.0,
+      134.7
+     ],
+     [
+      -22.2,
+      -65.8,
+      135.0,
+      134.7
+     ],
+     [
+      -11.1,
+      -52.9,
+      89.7,
+      120.1
+     ],
+     [
+      -11.1,
+      -52.9,
+      89.7,
+      120.1
+     ],
+     [
+      -22.4,
+      -66.9,
+      135.5,
+      135.5
+     ],
+     [
+      -22.4,
+      -66.9,
+      135.5,
+      135.5
+     ],
+     [
+      -21.7,
+      -65.8,
+      134.2,
+      134.7
+     ],
+     [
+      -21.7,
+      -65.8,
+      134.2,
+      134.7
+     ],
+     [
+      -22.2,
+      -65.8,
+      135.0,
+      134.7
+     ],
+     [
+      -22.2,
+      -65.8,
+      135.0,
+      134.7
+     ],
+     [
+      -68.7,
+      -52.4,
+      89.7,
+      120.1
+     ],
+     [
+      -126.2,
+      -52.0,
+      89.7,
+      120.1
+     ],
+     [
+      -195.1,
+      -65.5,
+      135.5,
+      135.5
+     ],
+     [
+      -252.6,
+      -65.0,
+      135.5,
+      135.5
+     ],
+     [
+      -309.4,
+      -63.4,
+      134.2,
+      134.7
+     ],
+     [
+      -366.9,
+      -62.9,
+      134.2,
+      134.7
+     ],
+     [
+      -425.0,
+      -62.5,
+      135.0,
+      134.7
+     ],
+     [
+      -482.6,
+      -62.0,
+      135.0,
+      134.7
+     ],
+     [
+      -529.1,
+      -48.6,
+      89.7,
+      120.1
+     ],
+     [
+      -586.7,
+      -48.2,
+      89.7,
+      120.1
+     ],
+     [
+      -598.0,
+      -62.2,
+      135.5,
+      135.5
+     ],
+     [
+      -598.0,
+      -62.2,
+      135.5,
+      135.5
+     ],
+     [
+      -597.2,
+      -61.0,
+      134.2,
+      134.7
+     ],
+     [
+      -597.2,
+      -61.0,
+      134.2,
+      134.7
+     ],
+     [
+      -597.7,
+      -61.1,
+      135.0,
+      134.7
+     ],
+     [
+      -549.3,
+      -60.5,
+      135.0,
+      134.7
+     ],
+     [
+      -489.9,
+      -47.1,
+      89.7,
+      120.1
+     ],
+     [
+      -441.5,
+      -46.5,
+      89.7,
+      120.1
+     ],
+     [
+      -404.5,
+      -60.0,
+      135.5,
+      135.5
+     ],
+     [
+      -356.1,
+      -59.4,
+      135.5,
+      135.5
+     ],
+     [
+      -307.0,
+      -57.7,
+      134.2,
+      134.7
+     ],
+     [
+      -258.6,
+      -57.2,
+      134.2,
+      134.7
+     ],
+     [
+      -210.7,
+      -56.7,
+      135.0,
+      134.7
+     ],
+     [
+      -162.4,
+      -56.1,
+      135.0,
+      134.7
+     ],
+     [
+      -102.9,
+      -42.7,
+      89.7,
+      120.1
+     ],
+     [
+      -54.6,
+      -42.1,
+      89.7,
+      120.1
+     ]
+    ],
+    "damage": "hit3"
+   }
+  },
+  "w": 79,
+  "h": 123,
+  "level_scale": null,
+  "colipse_bottom": 59.949
+ },
+ "6": {
+  "id": 6,
+  "name": "禺狨王",
+  "cls": "Monster6",
+  "module": "Monster_v1",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 3000,
+  "def": 6,
+  "exp": 35,
+  "gxp": 20,
+  "speed": 96.0,
+  "walk_speed": 4.0,
+  "see": 300.0,
+  "range": 450.0,
+  "attback": 0.5,
+  "probability": 0.35,
+  "fallList": [
+   "dsyj",
+   "dsqz"
+  ],
+  "attackPowers": [
+   30,
+   40
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 30.0,
+    "kind": "physics",
+    "kb": [
+     12.0,
+     -2.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 40.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -12.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 45.0,
+   "h": 80.0,
+   "ox": 0.5,
+   "oy": -0.05
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 23,
+    "loop": false,
+    "events": [
+     {
+      "frame": 23,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 23
+     }
+    ]
+   },
+   "hit2": {
+    "frames": 83,
+    "loop": false,
+    "events": [
+     {
+      "frame": 47,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 51,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 56,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 62,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 68,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 83,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 33,
+      "to": 83
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 14,
+    "loop": false,
+    "events": [
+     {
+      "frame": 14,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "walk"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "tiers": [
+    {
+     "min_dx": 251,
+     "follow": true
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 250,
+     "mod": 24,
+     "skill": {
+      "slot": 1,
+      "cd": 240,
+      "action": "hit2",
+      "father": 48
+     }
+    }
+   ]
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 65,
+  "h": 89,
+  "level_scale": null,
+  "colipse_bottom": 39.951
+ },
+ "7": {
+  "id": 7,
+  "name": "怪物7",
+  "cls": "Monster7",
+  "module": "Monster_v1",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 600,
+  "def": 8,
+  "exp": 22,
+  "gxp": 10,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 110.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ptxzf",
+   "ptxzg",
+   "ptjs",
+   "ptsmz"
+  ],
+  "attackPowers": [
+   35
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 35.0,
+    "kind": "physics",
+    "kb": [
+     5.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 75.0,
+   "h": 82.0,
+   "ox": 0.0,
+   "oy": -3.05
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 20,
+    "loop": false,
+    "events": [
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 14
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 22,
+    "loop": false,
+    "events": [
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 20,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "melee"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 57,
+  "h": 76,
+  "level_scale": null,
+  "colipse_bottom": 37.95
+ },
+ "8": {
+  "id": 8,
+  "name": "怪物8",
+  "cls": "Monster8",
+  "module": "Monster_v1",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": true,
+  "hp": 500,
+  "def": 7,
+  "exp": 18,
+  "gxp": 8,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 450.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ptxzf",
+   "ptxzg",
+   "ptjs",
+   "ptsmz"
+  ],
+  "attackPowers": [
+   25
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 25.0,
+    "kind": "physics",
+    "kb": [
+     5.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 42.0,
+   "h": 42.0,
+   "ox": -1.0,
+   "oy": 0.0
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 20,
+    "loop": false,
+    "events": [
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 1,
+      "to": 20,
+      "ox": -35.5,
+      "oy": 5.2,
+      "w": 30.0,
+      "h": 17.5
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 26,
+    "loop": false,
+    "events": [
+     {
+      "frame": 26,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "flying",
+   "back_time": 72
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 40,
+  "h": 56,
+  "level_scale": null,
+  "colipse_bottom": 21.002
+ },
+ "9": {
+  "id": 9,
+  "name": "彭魔王",
+  "cls": "Monster9",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 10000,
+  "def": 20,
+  "exp": 130,
+  "gxp": 20,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 400.0,
+  "attback": 0.3,
+  "probability": 0.25,
+  "fallList": [
+   "tsyp",
+   "tsyj"
+  ],
+  "attackPowers": [
+   70,
+   100,
+   200
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 100.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     0.0
+    ],
+    "hit_max": 99,
+    "interval": 999
+   },
+   "hit2": {
+    "power": 200.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -2.0
+    ],
+    "hit_max": 99,
+    "interval": 4
+   },
+   "hit3": {
+    "power": 100.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     0.0
+    ],
+    "hit_max": 99,
+    "interval": 999
+   },
+   "hit4": {
+    "power": 70.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     0.0
+    ],
+    "hit_max": 99,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 46.0,
+   "h": 81.99,
+   "ox": 1.0,
+   "oy": 2.0
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "fly": {
+    "frames": 1,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 24,
+    "loop": false,
+    "events": [
+     {
+      "frame": 9,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "fireHit"
+       }
+      ]
+     },
+     {
+      "frame": 24,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "end",
+        "state": "fly"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 7,
+      "to": 8
+     }
+    ]
+   },
+   "hit2": {
+    "frames": 41,
+    "loop": false,
+    "events": [
+     {
+      "frame": 17,
+      "ops": [
+       {
+        "op": "new_attack"
+       },
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 41,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "end",
+        "state": "fly"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 1,
+      "to": 41
+     }
+    ]
+   },
+   "hit3": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "fireHit"
+       }
+      ]
+     },
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "end",
+        "state": "fly"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "turnToEgg": {
+    "frames": 25,
+    "loop": false,
+    "events": [],
+    "sticks": []
+   },
+   "reBurn": {
+    "frames": 30,
+    "loop": false,
+    "events": [
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "end",
+        "state": "fly"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit4": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "end",
+        "state": "fly"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 6
+     },
+     {
+      "from": 7,
+      "to": 14
+     }
+    ]
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "phoenix",
+   "fly_attack_gravity": true
+  },
+  "specials": [
+   "phoenix_egg"
+  ],
+  "bullets": {
+   "hit1": {
+    "clip": "bullet_boss4",
+    "frame": 9,
+    "shared_attack_id": true,
+    "x_random_facing": [
+     30,
+     230
+    ],
+    "y_offset": 83.8,
+    "fade_in": 0.6,
+    "life": 1.225,
+    "radius": 44,
+    "damage": "hit1",
+    "children": [
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": 1.15,
+      "oy": -0.3,
+      "scale": 1.0,
+      "rot": 0.0
+     },
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": -14.15,
+      "oy": -10.2,
+      "scale": 0.9175,
+      "rot": 23.44
+     },
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": 13.55,
+      "oy": 9.55,
+      "scale": 0.9048,
+      "rot": -25.2
+     }
+    ]
+   },
+   "hit3": {
+    "clip": "bullet_boss4",
+    "frame": 15,
+    "shared_attack_id": true,
+    "x_random_facing": [
+     30,
+     230
+    ],
+    "y_offset": -125.95,
+    "fade_in": 0.6,
+    "life": 1.225,
+    "radius": 44,
+    "damage": "hit1",
+    "children": [
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": 1.15,
+      "oy": -0.3,
+      "scale": 1.0,
+      "rot": 0.0
+     },
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": -14.15,
+      "oy": -10.2,
+      "scale": 0.9175,
+      "rot": 23.44
+     },
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": 13.55,
+      "oy": 9.55,
+      "scale": 0.9048,
+      "rot": -25.2
+     }
+    ]
+   },
+   "egg": {
+    "clip": "bullet_boss4",
+    "frame": 24,
+    "shared_attack_id": true,
+    "x_random": [
+     -100,
+     100
+    ],
+    "y_random": [
+     -250,
+     -100
+    ],
+    "fade_in": 0.6,
+    "life": 1.225,
+    "radius": 44,
+    "damage": "hit1",
+    "children": [
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": 1.15,
+      "oy": -0.3,
+      "scale": 1.0,
+      "rot": 0.0
+     },
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": -14.15,
+      "oy": -10.2,
+      "scale": 0.9175,
+      "rot": 23.44
+     },
+     {
+      "clip": "bullet_boss4_tongue",
+      "ox": 13.55,
+      "oy": 9.55,
+      "scale": 0.9048,
+      "rot": -25.2
+     }
+    ]
+   }
+  },
+  "w": 93,
+  "h": 107,
+  "level_scale": null,
+  "colipse_bottom": 42.995
+ },
+ "10": {
+  "id": 10,
+  "name": "鲛魔王",
+  "cls": "Monster10",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 24000,
+  "def": 80,
+  "exp": 225,
+  "gxp": 70,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 250.0,
+  "attback": 0.5,
+  "probability": 0.2,
+  "fallList": [
+   "xhyk"
+  ],
+  "attackPowers": [
+   120,
+   150,
+   200
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 120.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 99
+   },
+   "hit2": {
+    "power": 200.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 99
+   },
+   "hit3": {
+    "power": 150.0,
+    "kind": "magic",
+    "kb": [
+     15.0,
+     0.0
+    ],
+    "hit_max": 40,
+    "interval": 99
+   }
+  },
+  "hitbox": {
+   "w": 46.0,
+   "h": 88.98,
+   "ox": -1.5,
+   "oy": 7.5
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit2": {
+    "frames": 30,
+    "loop": false,
+    "events": [
+     {
+      "frame": 5,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit2Effect"
+       }
+      ]
+     },
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 21,
+    "loop": false,
+    "events": [
+     {
+      "frame": 21,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 7,
+      "to": 21
+     }
+    ]
+   },
+   "hit3": {
+    "frames": 45,
+    "loop": false,
+    "events": [
+     {
+      "frame": 8,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 16,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 45,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 1,
+      "to": 45,
+      "per_frame": [
+       [
+        0.5,
+        -623.0,
+        69.7,
+        99.2
+       ],
+       [
+        -14.6,
+        -581.0,
+        69.7,
+        99.2
+       ],
+       [
+        -29.7,
+        -539.1,
+        69.7,
+        99.2
+       ],
+       [
+        -44.8,
+        -497.1,
+        69.7,
+        99.2
+       ],
+       [
+        -110.8,
+        -623.1,
+        120.6,
+        267.1
+       ],
+       [
+        -125.9,
+        -581.1,
+        120.6,
+        267.1
+       ],
+       [
+        -141.1,
+        -539.2,
+        120.7,
+        267.1
+       ],
+       [
+        -156.2,
+        -497.2,
+        120.7,
+        267.1
+       ],
+       [
+        -171.2,
+        -455.2,
+        120.7,
+        267.1
+       ],
+       [
+        -220.5,
+        -625.6,
+        154.8,
+        479.5
+       ],
+       [
+        -235.6,
+        -583.7,
+        154.8,
+        479.5
+       ],
+       [
+        -250.7,
+        -541.7,
+        154.8,
+        479.4
+       ],
+       [
+        -265.8,
+        -499.8,
+        154.8,
+        479.4
+       ],
+       [
+        -280.9,
+        -457.8,
+        154.8,
+        479.4
+       ],
+       [
+        -333.4,
+        -622.2,
+        192.2,
+        685.8
+       ],
+       [
+        -348.5,
+        -580.3,
+        201.3,
+        640.8
+       ],
+       [
+        -363.6,
+        -538.4,
+        208.7,
+        604.4
+       ],
+       [
+        -378.8,
+        -496.4,
+        218.7,
+        557.2
+       ],
+       [
+        -393.9,
+        -454.5,
+        230.4,
+        525.3
+       ],
+       [
+        -408.9,
+        -412.5,
+        150.4,
+        472.8
+       ],
+       [
+        -424.1,
+        -370.6,
+        157.8,
+        436.4
+       ],
+       [
+        -439.1,
+        -328.6,
+        167.8,
+        389.3
+       ],
+       [
+        -454.2,
+        -286.6,
+        179.5,
+        357.4
+       ],
+       [
+        -469.4,
+        -244.7,
+        107.2,
+        305.6
+       ],
+       [
+        -484.5,
+        -202.7,
+        116.3,
+        260.5
+       ],
+       [
+        -499.5,
+        -160.8,
+        123.6,
+        224.1
+       ],
+       [
+        -514.6,
+        -118.8,
+        133.6,
+        176.9
+       ],
+       [
+        -529.8,
+        -76.9,
+        145.3,
+        145.0
+       ],
+       [
+        -544.9,
+        -34.9,
+        69.7,
+        99.2
+       ],
+       [
+        -549.0,
+        -18.7,
+        67.8,
+        79.8
+       ],
+       [
+        -553.0,
+        -1.5,
+        64.1,
+        68.2
+       ],
+       [
+        -553.2,
+        9.0,
+        59.2,
+        52.5
+       ],
+       [
+        -556.6,
+        19.0,
+        59.2,
+        52.5
+       ],
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
+     }
+    ]
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "tiers": [
+    {
+     "min_dx": 251,
+     "skill": {
+      "slot": 1,
+      "cd": 240,
+      "action": "hit3",
+      "father": 45
+     }
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 250,
+     "mod": 24,
+     "skill": {
+      "slot": 2,
+      "cd": 144,
+      "action": "hit2"
+     }
+    }
+   ]
+  },
+  "specials": [
+   "back_armor"
+  ],
+  "bullets": {
+   "hit2": {
+    "clip": "bullet_boss5",
+    "frame": 5,
+    "offset": [
+     30,
+     30
+    ],
+    "offset_y_mul_facing": true,
+    "vx": 0,
+    "vy": 0,
+    "life": 1.0,
+    "radius": 57,
+    "rect_frames": [
+     [
+      -57.1,
+      -58.5,
+      114.2,
+      117.0
+     ],
+     [
+      -63.9,
+      -55.5,
+      121.3,
+      111.0
+     ],
+     [
+      -66.8,
+      -60.5,
+      124.2,
+      121.0
+     ],
+     [
+      -70.8,
+      -73.4,
+      144.6,
+      139.0
+     ],
+     [
+      -69.9,
+      -84.4,
+      144.0,
+      158.0
+     ],
+     [
+      -67.2,
+      -86.5,
+      147.6,
+      176.0
+     ],
+     [
+      -152.4,
+      -104.5,
+      279.0,
+      193.6
+     ],
+     [
+      -152.4,
+      -104.5,
+      279.0,
+      193.6
+     ],
+     [
+      -199.1,
+      -104.2,
+      296.0,
+      188.1
+     ],
+     [
+      -199.1,
+      -104.2,
+      296.0,
+      188.1
+     ],
+     [
+      -245.2,
+      -82.7,
+      285.0,
+      153.1
+     ],
+     [
+      -245.2,
+      -82.7,
+      285.0,
+      153.1
+     ],
+     [
+      -270.3,
+      -81.1,
+      278.0,
+      143.4
+     ],
+     [
+      -270.3,
+      -81.1,
+      278.0,
+      143.4
+     ],
+     [
+      -282.9,
+      -79.9,
+      201.0,
+      135.9
+     ],
+     [
+      -282.9,
+      -79.9,
+      201.0,
+      135.9
+     ],
+     [
+      -302.9,
+      -81.9,
+      173.0,
+      131.4
+     ],
+     [
+      -302.9,
+      -81.9,
+      173.0,
+      131.4
+     ],
+     [
+      -344.9,
+      -73.3,
+      131.0,
+      113.9
+     ],
+     [
+      -344.9,
+      -73.3,
+      131.0,
+      113.9
+     ],
+     [
+      -349.2,
+      -49.7,
+      98.0,
+      99.3
+     ],
+     [
+      -349.2,
+      -49.7,
+      98.0,
+      99.3
+     ],
+     null,
+     null,
+     null
+    ],
+    "damage": "hit2"
+   }
+  },
+  "w": 68,
+  "h": 103,
+  "level_scale": null,
+  "colipse_bottom": 51.992
+ },
+ "11": {
+  "id": 11,
+  "name": "狮驼王",
+  "cls": "Monster11",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 6000,
+  "def": 18,
+  "exp": 100,
+  "gxp": 20,
+  "speed": 96.0,
+  "walk_speed": 4.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.3,
+  "fallList": [
+   "tsgl"
+  ],
+  "attackPowers": [
+   40,
+   60,
+   200
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 60.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 200.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   },
+   "hit3": {
+    "power": 40.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -4.0
+    ],
+    "hit_max": 40,
+    "interval": 999,
+    "effect": {
+     "name": "poison",
+     "frames": 240,
+     "power": 20.0
+    }
+   }
+  },
+  "hitbox": {
+   "w": 46.0,
+   "h": 81.99,
+   "ox": 0.5,
+   "oy": 0.0
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 6
+     },
+     {
+      "from": 7,
+      "to": 14
+     }
+    ]
+   },
+   "hit2": {
+    "frames": 47,
+    "loop": false,
+    "events": [
+     {
+      "frame": 47,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 26,
+      "to": 47,
+      "ox": -330.8,
+      "oy": -141.7,
+      "w": 639.0,
+      "h": 219.35,
+      "origin": [
+       -178.3,
+       -32.0
+      ],
+      "inner": [
+       {
+        "ox": -152.5,
+        "oy": -109.7
+       },
+       {
+        "ox": 159.5,
+        "oy": -109.7,
+        "flip_x": true
+       }
+      ]
+     }
+    ]
+   },
+   "hit3": {
+    "frames": 24,
+    "loop": false,
+    "events": [
+     {
+      "frame": 24,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "spawn",
+        "fn": "doHit3Effect"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "tiers": [
+    {
+     "min_dx": 151,
+     "skill": {
+      "slot": 1,
+      "cd": 264,
+      "action": "hit3"
+     }
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 150,
+     "mod": 24,
+     "skill": {
+      "slot": 2,
+      "cd": 100,
+      "action": "hit2",
+      "father": 47
+     }
+    }
+   ]
+  },
+  "specials": [],
+  "bullets": {
+   "hit3": {
+    "clip": "bullet_boss6",
+    "frame": 24,
+    "offset": [
+     175,
+     20
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 10.0,
+    "radius": 100,
+    "damage": "hit3"
+   }
+  },
+  "w": 95,
+  "h": 90,
+  "level_scale": null,
+  "colipse_bottom": 40.995
+ },
+ "13": {
+  "id": 13,
+  "name": "怪物13",
+  "cls": "Monster13",
+  "module": "Monster2_v4",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 700,
+  "def": 9,
+  "exp": 26,
+  "gxp": 12,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ptxzf",
+   "ptxzg",
+   "ptjs",
+   "ptsmz"
+  ],
+  "attackPowers": [
+   45,
+   60
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 45.0,
+    "kind": "physics",
+    "kb": [
+     10.0,
+     -2.0
+    ],
+    "hit_max": 20,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 60.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -2.0
+    ],
+    "hit_max": 20,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 43.71,
+   "h": 75.53,
+   "ox": 1.4,
+   "oy": -6.0
+  },
+  "actions": {
+   "walk": {
+    "frames": 12,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 4
+     },
+     {
+      "from": 5,
+      "to": 14
+     },
+     {
+      "from": 5,
+      "to": 6
+     }
+    ]
+   },
+   "hit2": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 3,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "throwKnife"
+       }
+      ]
+     },
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 20,
+    "loop": false,
+    "events": [
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 8,
+    "loop": false,
+    "events": [
+     {
+      "frame": 8,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 13,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "tiers": [
+    {
+     "min_dx": 151,
+     "follow": true
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 150,
+     "mod": 24,
+     "skill": {
+      "slot": 1,
+      "cd": 96,
+      "action": "hit2"
+     }
+    }
+   ]
+  },
+  "specials": [],
+  "bullets": {
+   "hit2": {
+    "clip": "bullet_m13",
+    "frame": 3,
+    "offset": [
+     20,
+     0
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 1.083,
+    "radius": 30,
+    "rect_frames": [
+     [
+      -30.6,
+      -6.6,
+      60.5,
+      15.1
+     ],
+     [
+      -43.6,
+      -6.4,
+      60.5,
+      15.1
+     ],
+     [
+      -56.6,
+      -6.2,
+      60.5,
+      15.1
+     ],
+     [
+      -69.5,
+      -6.1,
+      60.5,
+      15.1
+     ],
+     [
+      -82.5,
+      -5.9,
+      60.5,
+      15.1
+     ],
+     [
+      -95.5,
+      -5.8,
+      60.5,
+      15.1
+     ],
+     [
+      -108.5,
+      -5.6,
+      60.5,
+      15.1
+     ],
+     [
+      -121.5,
+      -5.4,
+      60.5,
+      15.1
+     ],
+     [
+      -134.4,
+      -5.3,
+      60.5,
+      15.1
+     ],
+     [
+      -147.4,
+      -5.1,
+      60.5,
+      15.1
+     ],
+     [
+      -160.3,
+      -4.9,
+      60.5,
+      15.1
+     ],
+     [
+      -173.3,
+      -4.8,
+      60.5,
+      15.1
+     ],
+     [
+      -186.3,
+      -4.7,
+      60.5,
+      15.1
+     ],
+     [
+      -199.3,
+      -4.4,
+      60.4,
+      15.1
+     ],
+     [
+      -212.2,
+      -4.3,
+      60.4,
+      15.1
+     ],
+     [
+      -225.2,
+      -4.2,
+      60.4,
+      15.1
+     ],
+     [
+      -238.2,
+      -3.9,
+      60.4,
+      15.1
+     ],
+     [
+      -251.2,
+      -3.8,
+      60.4,
+      15.1
+     ],
+     [
+      -264.1,
+      -3.6,
+      60.4,
+      15.1
+     ],
+     [
+      -277.1,
+      -3.5,
+      60.5,
+      15.1
+     ],
+     [
+      -290.1,
+      -3.3,
+      60.4,
+      15.1
+     ],
+     [
+      -303.1,
+      -3.1,
+      60.4,
+      15.1
+     ],
+     [
+      -303.1,
+      -3.1,
+      60.4,
+      15.1
+     ],
+     [
+      -303.1,
+      -3.1,
+      60.4,
+      15.1
+     ],
+     [
+      -303.1,
+      -3.1,
+      60.4,
+      15.1
+     ],
+     [
+      -303.1,
+      -3.1,
+      60.4,
+      15.1
+     ],
+     [
+      -303.1,
+      -3.1,
+      60.4,
+      15.1
+     ]
+    ],
+    "damage": "hit2"
+   }
+  },
+  "w": 42,
+  "h": 72,
+  "level_scale": null,
+  "colipse_bottom": 31.764
+ },
+ "14": {
+  "id": 14,
+  "name": "怪物14",
+  "cls": "Monster14",
+  "module": "Monster2_v4",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 1000,
+  "def": 25,
+  "exp": 48,
+  "gxp": 24,
+  "speed": 120.0,
+  "walk_speed": 5.0,
+  "see": 300.0,
+  "range": 450.0,
+  "attback": 0.4,
+  "probability": 0.15,
+  "fallList": [
+   "yxxzf",
+   "yxxzg",
+   "yxjs",
+   "yxsmz"
+  ],
+  "attackPowers": [
+   30
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 30.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 39.15,
+   "h": 101.98,
+   "ox": 1.1,
+   "oy": -1.75
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 3,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit1"
+       }
+      ]
+     },
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 8,
+    "loop": false,
+    "events": [
+     {
+      "frame": 8,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "kiter",
+   "retreat_dx": 200,
+   "approach_dx": 350,
+   "mod": 24,
+   "attack_action": "hit1"
+  },
+  "specials": [],
+  "bullets": {
+   "hit1": {
+    "clip": "bullet_m14",
+    "frame": 3,
+    "offset": [
+     0,
+     0
+    ],
+    "vx": 96,
+    "vy": 0,
+    "accelerate": 230.4,
+    "max_speed": 168.0,
+    "distance": 1000,
+    "life": null,
+    "radius": 9,
+    "rect_frames": [
+     [
+      -9.2,
+      -6.2,
+      18.4,
+      12.3
+     ]
+    ],
+    "can_be_hit": true,
+    "damage": "hit1"
+   }
+  },
+  "w": 52,
+  "h": 112,
+  "level_scale": null,
+  "colipse_bottom": 49.239
+ },
+ "15": {
+  "id": 15,
+  "name": "怪物15",
+  "cls": "Monster15",
+  "module": "Monster2_v4",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": true,
+  "hp": 800,
+  "def": 10,
+  "exp": 30,
+  "gxp": 14,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 450.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "ptxzf",
+   "ptxzg",
+   "ptjs",
+   "ptsmz"
+  ],
+  "attackPowers": [
+   55
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 55.0,
+    "kind": "physics",
+    "kb": [
+     5.0,
+     -5.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 57.74,
+   "h": 49.0,
+   "ox": -1.55,
+   "oy": 0.0
+  },
+  "actions": {
+   "walk": {
+    "frames": 12,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 20,
+    "loop": false,
+    "events": [
+     {
+      "frame": 10,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 1,
+      "to": 5,
+      "ox": -93.6,
+      "oy": -18.5,
+      "w": 132.5,
+      "h": 65.0
+     },
+     {
+      "from": 10,
+      "to": 14,
+      "ox": -93.6,
+      "oy": -18.5,
+      "w": 132.5,
+      "h": 65.0
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 11,
+    "loop": false,
+    "events": [
+     {
+      "frame": 11,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 30,
+    "loop": false,
+    "events": [
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 12,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "flying",
+   "back_time": 72
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 58,
+  "h": 72,
+  "level_scale": null,
+  "colipse_bottom": 24.498
+ },
+ "16": {
+  "id": 16,
+  "name": "怪物16",
+  "cls": "Monster16",
+  "module": "Monster2_v4",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 1200,
+  "def": 50,
+  "exp": 57,
+  "gxp": 27,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "yxxzf",
+   "yxxzg",
+   "yxjs",
+   "yxsmz"
+  ],
+  "attackPowers": [
+   90,
+   110
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 90.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -2.0
+    ],
+    "hit_max": 20,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 110.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -2.0
+    ],
+    "hit_max": 20,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 103.81,
+   "h": 52.99,
+   "ox": 1.75,
+   "oy": -6.05
+  },
+  "actions": {
+   "walk": {
+    "frames": 12,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 22,
+    "loop": false,
+    "events": [
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit2": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 5,
+      "to": 19
+     }
+    ]
+   },
+   "hit1": {
+    "frames": 15,
+    "loop": false,
+    "events": [
+     {
+      "frame": 15,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 4
+     },
+     {
+      "from": 5,
+      "to": 6
+     },
+     {
+      "from": 7,
+      "to": 14
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "tiers": [
+    {
+     "min_dx": 151,
+     "follow": true
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 150,
+     "mod": 24,
+     "skill": {
+      "slot": 1,
+      "cd": 240,
+      "action": "hit2"
+     }
+    }
+   ]
+  },
+  "specials": [],
+  "bullets": {
+   "hit2": {
+    "clip": "bullet_m13",
+    "frame": 3,
+    "offset": [
+     20,
+     -40
+    ],
+    "vx": 430,
+    "vy": 0,
+    "life": 1.2,
+    "radius": 70,
+    "damage": "hit2"
+   }
+  },
+  "w": 98,
+  "h": 48,
+  "level_scale": null,
+  "colipse_bottom": 20.446
+ },
+ "17": {
+  "id": 17,
+  "name": "龟丞相",
+  "cls": "Monster17",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 4800,
+  "def": 70,
+  "exp": 200,
+  "gxp": 60,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 400.0,
+  "attback": 0.6,
+  "probability": 0.15,
+  "fallList": [
+   "yxxzf",
+   "yxxzg",
+   "yxjs",
+   "yxsmz"
+  ],
+  "attackPowers": [
+   110
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 110.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 31.81,
+   "h": 74.99,
+   "ox": 0.45,
+   "oy": 2.95
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 36,
+    "loop": false,
+    "events": [
+     {
+      "frame": 36,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 4
+     },
+     {
+      "from": 5,
+      "to": 36
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "melee"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 38,
+  "h": 75,
+  "level_scale": {
+   "kind": "level_is",
+   "level": "3-1",
+   "true": {
+    "hp": 4800,
+    "exp": 200,
+    "gxp": 60,
+    "is_boss": true,
+    "falls": false
+   },
+   "false": {
+    "hp": 1600,
+    "exp": 75,
+    "gxp": 30,
+    "is_boss": false,
+    "falls": true
+   }
+  },
+  "colipse_bottom": 40.444
+ },
+ "18": {
+  "id": 18,
+  "name": "怪物18",
+  "cls": "Monster18",
+  "module": "Monster2_v4",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": true,
+  "hp": 999999,
+  "def": 25,
+  "exp": 500,
+  "gxp": 500,
+  "speed": 144.0,
+  "walk_speed": 6.0,
+  "see": 300.0,
+  "range": 450.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [],
+  "attackPowers": [
+   150,
+   300
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 150.0,
+    "kind": "physics",
+    "kb": [
+     0.0,
+     -2.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   },
+   "hit1-1": {
+    "power": 150.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -5.0
+    ],
+    "hit_max": 100,
+    "interval": 999
+   },
+   "hit2": {
+    "power": 300.0,
+    "kind": "physics",
+    "kb": [
+     5.0,
+     -5.0
+    ],
+    "hit_max": 100,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 122.31,
+   "h": 42.99,
+   "ox": -1.35,
+   "oy": -3.5
+  },
+  "actions": {
+   "walk": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 49,
+    "loop": false,
+    "events": [
+     {
+      "frame": 34,
+      "ops": [
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 37,
+      "ops": [
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 40,
+      "ops": [
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 43,
+      "ops": [
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 46,
+      "ops": [
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 48,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 29,
+      "to": 49
+     }
+    ]
+   },
+   "hit2": {
+    "frames": 50,
+    "loop": false,
+    "events": [
+     {
+      "frame": 49,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "dohit2Pre"
+       }
+      ]
+     },
+     {
+      "frame": 50,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 8,
+    "loop": false,
+    "events": [
+     {
+      "frame": 8,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 40,
+    "loop": false,
+    "events": [
+     {
+      "frame": 40,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "flying_dive",
+   "back_time": 72
+  },
+  "specials": [
+   "timed_add"
+  ],
+  "bullets": {},
+  "w": 106,
+  "h": 46,
+  "level_scale": null,
+  "colipse_bottom": 21.997
+ },
+ "19": {
+  "id": 19,
+  "name": "鲨魔王",
+  "cls": "Monster19",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 48000,
+  "def": 90,
+  "exp": 300,
+  "gxp": 100,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "xhxh",
+   "xhmj"
+  ],
+  "attackPowers": [
+   100,
+   130,
+   150,
+   250,
+   300
+  ],
+  "attacks": {
+   "hit1-1": {
+    "power": 150.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 4
+   },
+   "hit1-2": {
+    "power": 150.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 4
+   },
+   "hit2-1": {
+    "power": 130.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   },
+   "hit2-2": {
+    "power": 130.0,
+    "kind": "physics",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 100.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 999
+   },
+   "hit3-1": {
+    "power": 250.0,
+    "kind": "magic",
+    "kb": [
+     15.0,
+     0.0
+    ],
+    "hit_max": 40,
+    "interval": 4
+   },
+   "hit3-2": {
+    "power": 250.0,
+    "kind": "magic",
+    "kb": [
+     15.0,
+     0.0
+    ],
+    "hit_max": 40,
+    "interval": 4
+   },
+   "hit3": {
+    "power": 300.0,
+    "kind": "magic",
+    "kb": [
+     15.0,
+     0.0
+    ],
+    "hit_max": 40,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 65.57,
+   "h": 152.97,
+   "ox": 0.25,
+   "oy": 1.5
+  },
+  "actions": {
+   "walk1": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "wait1": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit2-1": {
+    "frames": 23,
+    "loop": false,
+    "events": [
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit2"
+       }
+      ]
+     },
+     {
+      "frame": 23,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait1"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 5,
+      "to": 19
+     }
+    ]
+   },
+   "hit2-2": {
+    "frames": 23,
+    "loop": false,
+    "events": [
+     {
+      "frame": 22,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit2"
+       }
+      ]
+     },
+     {
+      "frame": 23,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait2"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 5,
+      "to": 19
+     }
+    ]
+   },
+   "hit1-1": {
+    "frames": 12,
+    "loop": false,
+    "events": [
+     {
+      "frame": 12,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait1"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 4,
+      "to": 10
+     }
+    ]
+   },
+   "walk2": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "wait2": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1-2": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait2"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 4,
+      "to": 10
+     }
+    ]
+   },
+   "hit3-1": {
+    "frames": 18,
+    "loop": false,
+    "events": [
+     {
+      "frame": 5,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit3Pre"
+       }
+      ]
+     },
+     {
+      "frame": 18,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait1"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit3-2": {
+    "frames": 18,
+    "loop": false,
+    "events": [
+     {
+      "frame": 5,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit3Pre"
+       }
+      ]
+     },
+     {
+      "frame": 18,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait2"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait2"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "tiered",
+   "fallback": "hit1",
+   "low_hp": 0.7,
+   "summon": 18,
+   "tiers": [
+    {
+     "min_dx": 151,
+     "skill": {
+      "slot": 1,
+      "cd": 360,
+      "action": "hit3-1",
+      "low_action": "hit3-2",
+      "father": 18
+     }
+    },
+    {
+     "min_dx": 0,
+     "max_dx": 150,
+     "mod": 24,
+     "skill": {
+      "slot": 2,
+      "cd": 480,
+      "action": "hit2-1",
+      "low_action": "hit2-2",
+      "father": 20
+     }
+    }
+   ]
+  },
+  "specials": [
+   "phase_summon"
+  ],
+  "bullets": {
+   "hit2-1": {
+    "clip": "bullet_m19",
+    "frame": 22,
+    "offset": [
+     -600,
+     -40
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 2.083,
+    "radius": 191,
+    "rect_frames": [
+     [
+      1215.4,
+      -15.7,
+      383.0,
+      119.1
+     ],
+     [
+      1162.7,
+      -15.6,
+      415.0,
+      129.9
+     ],
+     [
+      1110.0,
+      -15.5,
+      383.0,
+      136.9
+     ],
+     [
+      1057.4,
+      -15.4,
+      384.0,
+      129.3
+     ],
+     [
+      1004.6,
+      -15.3,
+      379.0,
+      129.3
+     ],
+     [
+      952.0,
+      -15.2,
+      383.0,
+      119.1
+     ],
+     [
+      899.3,
+      -15.1,
+      415.0,
+      129.9
+     ],
+     [
+      846.6,
+      -15.0,
+      383.0,
+      136.9
+     ],
+     [
+      794.0,
+      -14.9,
+      384.0,
+      129.3
+     ],
+     [
+      741.3,
+      -14.8,
+      379.0,
+      129.3
+     ],
+     [
+      688.6,
+      -14.7,
+      383.0,
+      119.1
+     ],
+     [
+      635.9,
+      -14.6,
+      415.0,
+      129.9
+     ],
+     [
+      583.2,
+      -14.5,
+      383.0,
+      136.9
+     ],
+     [
+      530.5,
+      -14.4,
+      384.0,
+      129.3
+     ],
+     [
+      477.9,
+      -14.3,
+      379.0,
+      129.3
+     ],
+     [
+      425.1,
+      -14.2,
+      383.0,
+      119.1
+     ],
+     [
+      372.4,
+      -14.1,
+      415.0,
+      129.9
+     ],
+     [
+      319.9,
+      -14.0,
+      383.0,
+      136.9
+     ],
+     [
+      267.1,
+      -13.9,
+      384.0,
+      129.3
+     ],
+     [
+      214.4,
+      -13.8,
+      379.0,
+      129.3
+     ],
+     [
+      161.8,
+      -13.7,
+      383.0,
+      119.1
+     ],
+     [
+      109.1,
+      -13.6,
+      415.0,
+      129.9
+     ],
+     [
+      56.4,
+      -13.5,
+      383.0,
+      136.9
+     ],
+     [
+      3.7,
+      -13.4,
+      384.0,
+      129.3
+     ],
+     [
+      -49.0,
+      -13.3,
+      379.0,
+      129.3
+     ],
+     [
+      -101.6,
+      -13.2,
+      383.0,
+      119.1
+     ],
+     [
+      -154.3,
+      -13.0,
+      415.0,
+      129.9
+     ],
+     [
+      -206.9,
+      -13.0,
+      383.0,
+      136.9
+     ],
+     [
+      -259.6,
+      -12.8,
+      384.0,
+      129.3
+     ],
+     [
+      -312.4,
+      -12.7,
+      379.0,
+      129.3
+     ],
+     [
+      -365.1,
+      -12.7,
+      383.0,
+      119.1
+     ],
+     [
+      -417.7,
+      -12.5,
+      415.0,
+      129.9
+     ],
+     [
+      -470.4,
+      -12.5,
+      383.0,
+      136.9
+     ],
+     [
+      -523.1,
+      -12.3,
+      384.0,
+      129.3
+     ],
+     [
+      -575.8,
+      -12.2,
+      379.0,
+      129.3
+     ],
+     [
+      -628.5,
+      -12.2,
+      383.0,
+      119.1
+     ],
+     [
+      -681.1,
+      -12.0,
+      415.0,
+      129.9
+     ],
+     [
+      -733.8,
+      -12.0,
+      383.0,
+      136.9
+     ],
+     [
+      -786.5,
+      -11.8,
+      384.0,
+      129.3
+     ],
+     [
+      -839.1,
+      -11.7,
+      379.0,
+      129.3
+     ],
+     [
+      -891.9,
+      -11.7,
+      383.0,
+      119.1
+     ],
+     [
+      -944.5,
+      -11.5,
+      415.0,
+      129.9
+     ],
+     [
+      -997.2,
+      -11.5,
+      383.0,
+      136.9
+     ],
+     [
+      -1049.9,
+      -11.3,
+      384.0,
+      129.3
+     ],
+     [
+      -1102.6,
+      -11.2,
+      379.0,
+      129.3
+     ],
+     [
+      -1155.2,
+      -11.2,
+      383.0,
+      119.1
+     ],
+     [
+      -1207.9,
+      -11.0,
+      415.0,
+      129.9
+     ],
+     [
+      -1260.6,
+      -11.0,
+      383.0,
+      136.9
+     ],
+     [
+      -1313.3,
+      -10.8,
+      384.0,
+      129.3
+     ],
+     [
+      -1366.0,
+      -10.7,
+      379.0,
+      129.3
+     ],
+     [
+      -1418.7,
+      -10.7,
+      383.0,
+      119.1
+     ]
+    ],
+    "damage": "hit2"
+   },
+   "hit2-2": {
+    "clip": "bullet_m19",
+    "frame": 22,
+    "offset": [
+     -600,
+     -40
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 2.083,
+    "radius": 191,
+    "rect_frames": [
+     [
+      1215.4,
+      -15.7,
+      383.0,
+      119.1
+     ],
+     [
+      1162.7,
+      -15.6,
+      415.0,
+      129.9
+     ],
+     [
+      1110.0,
+      -15.5,
+      383.0,
+      136.9
+     ],
+     [
+      1057.4,
+      -15.4,
+      384.0,
+      129.3
+     ],
+     [
+      1004.6,
+      -15.3,
+      379.0,
+      129.3
+     ],
+     [
+      952.0,
+      -15.2,
+      383.0,
+      119.1
+     ],
+     [
+      899.3,
+      -15.1,
+      415.0,
+      129.9
+     ],
+     [
+      846.6,
+      -15.0,
+      383.0,
+      136.9
+     ],
+     [
+      794.0,
+      -14.9,
+      384.0,
+      129.3
+     ],
+     [
+      741.3,
+      -14.8,
+      379.0,
+      129.3
+     ],
+     [
+      688.6,
+      -14.7,
+      383.0,
+      119.1
+     ],
+     [
+      635.9,
+      -14.6,
+      415.0,
+      129.9
+     ],
+     [
+      583.2,
+      -14.5,
+      383.0,
+      136.9
+     ],
+     [
+      530.5,
+      -14.4,
+      384.0,
+      129.3
+     ],
+     [
+      477.9,
+      -14.3,
+      379.0,
+      129.3
+     ],
+     [
+      425.1,
+      -14.2,
+      383.0,
+      119.1
+     ],
+     [
+      372.4,
+      -14.1,
+      415.0,
+      129.9
+     ],
+     [
+      319.9,
+      -14.0,
+      383.0,
+      136.9
+     ],
+     [
+      267.1,
+      -13.9,
+      384.0,
+      129.3
+     ],
+     [
+      214.4,
+      -13.8,
+      379.0,
+      129.3
+     ],
+     [
+      161.8,
+      -13.7,
+      383.0,
+      119.1
+     ],
+     [
+      109.1,
+      -13.6,
+      415.0,
+      129.9
+     ],
+     [
+      56.4,
+      -13.5,
+      383.0,
+      136.9
+     ],
+     [
+      3.7,
+      -13.4,
+      384.0,
+      129.3
+     ],
+     [
+      -49.0,
+      -13.3,
+      379.0,
+      129.3
+     ],
+     [
+      -101.6,
+      -13.2,
+      383.0,
+      119.1
+     ],
+     [
+      -154.3,
+      -13.0,
+      415.0,
+      129.9
+     ],
+     [
+      -206.9,
+      -13.0,
+      383.0,
+      136.9
+     ],
+     [
+      -259.6,
+      -12.8,
+      384.0,
+      129.3
+     ],
+     [
+      -312.4,
+      -12.7,
+      379.0,
+      129.3
+     ],
+     [
+      -365.1,
+      -12.7,
+      383.0,
+      119.1
+     ],
+     [
+      -417.7,
+      -12.5,
+      415.0,
+      129.9
+     ],
+     [
+      -470.4,
+      -12.5,
+      383.0,
+      136.9
+     ],
+     [
+      -523.1,
+      -12.3,
+      384.0,
+      129.3
+     ],
+     [
+      -575.8,
+      -12.2,
+      379.0,
+      129.3
+     ],
+     [
+      -628.5,
+      -12.2,
+      383.0,
+      119.1
+     ],
+     [
+      -681.1,
+      -12.0,
+      415.0,
+      129.9
+     ],
+     [
+      -733.8,
+      -12.0,
+      383.0,
+      136.9
+     ],
+     [
+      -786.5,
+      -11.8,
+      384.0,
+      129.3
+     ],
+     [
+      -839.1,
+      -11.7,
+      379.0,
+      129.3
+     ],
+     [
+      -891.9,
+      -11.7,
+      383.0,
+      119.1
+     ],
+     [
+      -944.5,
+      -11.5,
+      415.0,
+      129.9
+     ],
+     [
+      -997.2,
+      -11.5,
+      383.0,
+      136.9
+     ],
+     [
+      -1049.9,
+      -11.3,
+      384.0,
+      129.3
+     ],
+     [
+      -1102.6,
+      -11.2,
+      379.0,
+      129.3
+     ],
+     [
+      -1155.2,
+      -11.2,
+      383.0,
+      119.1
+     ],
+     [
+      -1207.9,
+      -11.0,
+      415.0,
+      129.9
+     ],
+     [
+      -1260.6,
+      -11.0,
+      383.0,
+      136.9
+     ],
+     [
+      -1313.3,
+      -10.8,
+      384.0,
+      129.3
+     ],
+     [
+      -1366.0,
+      -10.7,
+      379.0,
+      129.3
+     ],
+     [
+      -1418.7,
+      -10.7,
+      383.0,
+      119.1
+     ]
+    ],
+    "damage": "hit2"
+   },
+   "hit3-1": {
+    "clip": "bullet_m19_pre",
+    "frame": 5,
+    "target_offset": [
+     -100,
+     -145
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 0.958,
+    "radius": 96,
+    "damage": "hit3",
+    "pre": true,
+    "no_hit": true,
+    "next": {
+     "clip": "bullet_m19_2",
+     "life": 0.458,
+     "radius": 96,
+     "damage": "hit3",
+     "rect_frames": [
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ]
+     ],
+     "no_mirror": false
+    },
+    "no_mirror": true
+   },
+   "hit3-2": {
+    "clip": "bullet_m19_pre",
+    "frame": 5,
+    "target_offset": [
+     -100,
+     -145
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 0.958,
+    "radius": 96,
+    "damage": "hit3",
+    "pre": true,
+    "no_hit": true,
+    "next": {
+     "clip": "bullet_m19_2",
+     "life": 0.458,
+     "radius": 96,
+     "damage": "hit3",
+     "rect_frames": [
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ],
+      [
+       0.0,
+       0.0,
+       192.0,
+       192.0
+      ]
+     ],
+     "no_mirror": false
+    },
+    "no_mirror": true
+   }
+  },
+  "w": 150,
+  "h": 157,
+  "level_scale": null,
+  "colipse_bottom": 77.985
+ },
+ "20": {
+  "id": 20,
+  "name": "怪物20",
+  "cls": "Monster20",
+  "module": "Monster2_v4",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 1400,
+  "def": 30,
+  "exp": 65,
+  "gxp": 30,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 400.0,
+  "range": 200.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [
+   "yxxzf",
+   "yxxzg",
+   "yxjs",
+   "yxsmz"
+  ],
+  "attackPowers": [
+   100
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 100.0,
+    "kind": "physics",
+    "kb": [
+     10.0,
+     -2.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 57.79,
+   "h": 82.99,
+   "ox": -0.05,
+   "oy": 3.2
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 15,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 20,
+    "loop": false,
+    "events": [
+     {
+      "frame": 11,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 20,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 3,
+      "to": 15
+     }
+    ]
+   },
+   "dead": {
+    "frames": 30,
+    "loop": false,
+    "events": [
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "melee"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 87,
+  "h": 93,
+  "level_scale": null,
+  "colipse_bottom": 44.695
+ },
+ "21": {
+  "id": 21,
+  "name": "蝙蝠洞",
+  "cls": "Monster21",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 6000,
+  "def": 25,
+  "exp": 0,
+  "gxp": 0,
+  "speed": 0.0,
+  "walk_speed": 0.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.25,
+  "fallList": [
+   "jcsz",
+   "jcbj",
+   "jcys"
+  ],
+  "attackPowers": [],
+  "attacks": {},
+  "hitbox": {
+   "w": 261.79,
+   "h": 168.97,
+   "ox": 0.0,
+   "oy": -7.05
+  },
+  "actions": {
+   "wait": {
+    "frames": 1,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 1,
+    "loop": false,
+    "events": [],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "static"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 150,
+  "h": 170,
+  "level_scale": null,
+  "colipse_bottom": 77.438
+ },
+ "22": {
+  "id": 22,
+  "name": "牛魔王",
+  "cls": "Monster22",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 20000,
+  "def": 100,
+  "exp": 48,
+  "gxp": 24,
+  "speed": 312.0,
+  "walk_speed": 13.0,
+  "see": 300.0,
+  "range": 450.0,
+  "attback": 0.4,
+  "probability": 0.15,
+  "fallList": [],
+  "attackPowers": [
+   300
+  ],
+  "attacks": {
+   "walk": {
+    "power": 300.0,
+    "kind": "physics",
+    "kb": [
+     20.0,
+     -2.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 83.23,
+   "h": 56.99,
+   "ox": 0.05,
+   "oy": -3.3
+  },
+  "actions": {
+   "wait": {
+    "frames": 4,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "walk": {
+    "frames": 110,
+    "loop": true,
+    "events": [],
+    "sticks": [
+     {
+      "from": 1,
+      "to": 110,
+      "ox": -52.5,
+      "oy": -14.4,
+      "w": 100.0,
+      "h": 63.5,
+      "space": "body",
+      "body_tx": 0.35,
+      "body_ty": -19.75
+     }
+    ]
+   }
+  },
+  "ai": {
+   "type": "charge"
+  },
+  "specials": [
+   "charge_invuln",
+   "contact_damage_walk"
+  ],
+  "bullets": {},
+  "w": 88,
+  "h": 91,
+  "level_scale": null,
+  "colipse_bottom": 25.194
+ },
+ "23": {
+  "id": 23,
+  "name": "牛魔王",
+  "cls": "Monster23",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 40000,
+  "def": 100,
+  "exp": 100,
+  "gxp": 40,
+  "speed": 120.0,
+  "walk_speed": 5.0,
+  "see": 300.0,
+  "range": 400.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [],
+  "attackPowers": [
+   50,
+   85,
+   100,
+   200,
+   210
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 200.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 210.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   },
+   "hit3": {
+    "power": 100.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -4.0
+    ],
+    "hit_max": 40,
+    "interval": 999
+   },
+   "hit4": {
+    "power": 85.0,
+    "kind": "magic",
+    "kb": [
+     8.0,
+     -2.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   },
+   "hit5": {
+    "power": 50.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -7.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 49.92,
+   "h": 89.98,
+   "ox": 0.5,
+   "oy": -3.2
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit2": {
+    "frames": 60,
+    "loop": false,
+    "events": [
+     {
+      "frame": 1,
+      "ops": [
+       {
+        "op": "stop"
+       }
+      ]
+     },
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "lunge"
+       }
+      ]
+     },
+     {
+      "frame": 60,
+      "ops": [
+       {
+        "op": "stop"
+       },
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 30,
+      "to": 60
+     }
+    ]
+   },
+   "wait": {
+    "frames": 20,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit3": {
+    "frames": 67,
+    "loop": false,
+    "events": [
+     {
+      "frame": 43,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 55,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 67,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 33,
+      "to": 67
+     }
+    ]
+   },
+   "hit4": {
+    "frames": 54,
+    "loop": false,
+    "events": [
+     {
+      "frame": 30,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 32,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 34,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 54,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 20,
+      "to": 54
+     }
+    ]
+   },
+   "hit5": {
+    "frames": 130,
+    "loop": false,
+    "events": [
+     {
+      "frame": 28,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       },
+       {
+        "op": "spawn",
+        "fn": "Dohit5"
+       },
+       {
+        "op": "grab"
+       }
+      ]
+     },
+     {
+      "frame": 46,
+      "ops": [
+       {
+        "op": "grab_tick"
+       }
+      ]
+     },
+     {
+      "frame": 62,
+      "ops": [
+       {
+        "op": "grab_tick"
+       }
+      ]
+     },
+     {
+      "frame": 78,
+      "ops": [
+       {
+        "op": "grab_tick"
+       }
+      ]
+     },
+     {
+      "frame": 95,
+      "ops": [
+       {
+        "op": "grab_tick"
+       }
+      ]
+     },
+     {
+      "frame": 112,
+      "ops": [
+       {
+        "op": "grab_tick"
+       }
+      ]
+     },
+     {
+      "frame": 130,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [],
+    "frame_variants": {
+     "wukong": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      46,
+      48,
+      48,
+      50,
+      50,
+      52,
+      52,
+      54,
+      54,
+      56,
+      56,
+      58,
+      58,
+      60,
+      60,
+      62,
+      62,
+      64,
+      64,
+      66,
+      66,
+      68,
+      68,
+      70,
+      70,
+      72,
+      72,
+      74,
+      74,
+      76,
+      76,
+      78,
+      78,
+      80,
+      80,
+      82,
+      82,
+      84,
+      84,
+      86,
+      86,
+      88,
+      88,
+      90,
+      90,
+      92,
+      92,
+      94,
+      94,
+      96,
+      96,
+      98,
+      98,
+      100,
+      100,
+      102,
+      102,
+      104,
+      104,
+      106,
+      106,
+      108,
+      108,
+      110,
+      110,
+      112,
+      112,
+      114,
+      114,
+      116,
+      116,
+      118,
+      118,
+      120,
+      120,
+      122,
+      122,
+      124,
+      124,
+      126,
+      126,
+      128,
+      128,
+      130
+     ],
+     "tangseng": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      47,
+      47,
+      49,
+      49,
+      51,
+      51,
+      53,
+      53,
+      55,
+      55,
+      57,
+      57,
+      59,
+      59,
+      61,
+      61,
+      63,
+      63,
+      65,
+      65,
+      67,
+      67,
+      69,
+      69,
+      71,
+      71,
+      73,
+      73,
+      75,
+      75,
+      77,
+      77,
+      79,
+      79,
+      81,
+      81,
+      83,
+      83,
+      85,
+      85,
+      87,
+      87,
+      89,
+      89,
+      91,
+      91,
+      93,
+      93,
+      95,
+      95,
+      97,
+      97,
+      99,
+      99,
+      101,
+      101,
+      103,
+      103,
+      105,
+      105,
+      107,
+      107,
+      109,
+      109,
+      111,
+      111,
+      113,
+      113,
+      115,
+      115,
+      117,
+      117,
+      119,
+      119,
+      121,
+      121,
+      123,
+      123,
+      125,
+      125,
+      127,
+      127,
+      129,
+      129,
+      130
+     ]
+    }
+   },
+   "hurt": {
+    "frames": 6,
+    "loop": false,
+    "events": [
+     {
+      "frame": 6,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "boss_dead"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 60,
+    "loop": false,
+    "events": [
+     {
+      "frame": 33,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 60,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 7,
+      "to": 12
+     },
+     {
+      "from": 33,
+      "to": 44
+     }
+    ]
+   }
+  },
+  "ai": {
+   "type": "boss23"
+  },
+  "specials": [
+   "grab"
+  ],
+  "bullets": {},
+  "w": 74,
+  "h": 128,
+  "level_scale": null,
+  "colipse_bottom": 41.791
+ },
+ "24": {
+  "id": 24,
+  "name": "牛魔王",
+  "cls": "Monster24",
+  "module": "Monster2_v4",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 200000,
+  "def": 0,
+  "exp": 100,
+  "gxp": 20,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 400.0,
+  "attback": 0.5,
+  "probability": 0.15,
+  "fallList": [],
+  "attackPowers": [
+   300,
+   400
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 400.0,
+    "kind": "magic",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 2,
+    "interval": 4
+   },
+   "hit2": {
+    "power": 300.0,
+    "kind": "magic",
+    "kb": [
+     2.0,
+     -10.0
+    ],
+    "hit_max": 30,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 83.23,
+   "h": 56.99,
+   "ox": 11.15,
+   "oy": 192.5
+  },
+  "actions": {
+   "wait": {
+    "frames": 1,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 1,
+    "loop": false,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "boss24"
+  },
+  "specials": [
+   "heart_gate",
+   "hands",
+   "fire"
+  ],
+  "bullets": {},
+  "w": 93,
+  "h": 170,
+  "level_scale": null,
+  "colipse_bottom": 220.978,
+  "heart_split_ratio": 0.559,
+  "heart_offset": [
+   17.5,
+   116.1
+  ],
+  "heart_frames": 23
+ },
+ "25": {
+  "id": 25,
+  "name": "怪物25",
+  "cls": "Monster25",
+  "module": "Monster_v1",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 5000,
+  "def": 120,
+  "exp": 45,
+  "gxp": 30,
+  "speed": 72.0,
+  "walk_speed": 3.0,
+  "see": 300.0,
+  "range": 110.0,
+  "attback": 0.8,
+  "probability": 0.15,
+  "fallList": [
+   "jlxzf",
+   "jlxzg",
+   "jljs",
+   "jlsmz"
+  ],
+  "attackPowers": [
+   200
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 200.0,
+    "kind": "physics",
+    "kb": [
+     10.0,
+     -3.0
+    ],
+    "hit_max": 1,
+    "interval": 4
+   }
+  },
+  "hitbox": {
+   "w": 46.02,
+   "h": 86.01,
+   "ox": 0.2,
+   "oy": 3.35
+  },
+  "actions": {
+   "walk": {
+    "frames": 20,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit1": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 2,
+      "to": 10
+     }
+    ]
+   },
+   "hurt": {
+    "frames": 13,
+    "loop": false,
+    "events": [
+     {
+      "frame": 13,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 24,
+    "loop": false,
+    "events": [
+     {
+      "frame": 24,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 13,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "melee"
+  },
+  "specials": [],
+  "bullets": {},
+  "w": 79,
+  "h": 85,
+  "level_scale": null,
+  "colipse_bottom": 46.357
+ },
+ "26": {
+  "id": 26,
+  "name": "龙王",
+  "cls": "Monster26",
+  "module": "Monster3_v3",
+  "is_boss": true,
+  "boss": true,
+  "is_fly": false,
+  "hp": 40000,
+  "def": 150,
+  "exp": 300,
+  "gxp": 100,
+  "speed": 96.0,
+  "walk_speed": 4.0,
+  "see": 300.0,
+  "range": 400.0,
+  "attback": 0.2,
+  "probability": 1.0,
+  "fallList": [
+   "dhqf"
+  ],
+  "attackPowers": [
+   35,
+   100,
+   200,
+   300
+  ],
+  "attacks": {
+   "hit1": {
+    "power": 200.0,
+    "kind": "physics",
+    "kb": [
+     6.0,
+     -5.0
+    ],
+    "hit_max": 30,
+    "interval": 999
+   },
+   "hit2": {
+    "power": 35.0,
+    "kind": "magic",
+    "kb": [
+     10.0,
+     -2.0
+    ],
+    "hit_max": 30,
+    "interval": 999
+   },
+   "hit3": {
+    "power": 100.0,
+    "kind": "magic",
+    "kb": [
+     0.0,
+     0.0
+    ],
+    "hit_max": 40,
+    "interval": 999,
+    "effect": {
+     "name": "ice",
+     "frames": 120,
+     "power": 0.0
+    }
+   },
+   "hit4": {
+    "power": 300.0,
+    "kind": "magic",
+    "kb": [
+     20.0,
+     -20.0
+    ],
+    "hit_max": 30,
+    "interval": 999
+   }
+  },
+  "hitbox": {
+   "w": 45.0,
+   "h": 100.0,
+   "ox": 0.0,
+   "oy": 9.95
+  },
+  "actions": {
+   "walk": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hit2": {
+    "frames": 90,
+    "loop": false,
+    "events": [
+     {
+      "frame": 34,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 39,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 44,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 49,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 54,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 59,
+      "ops": [
+       {
+        "op": "new_attack"
+       }
+      ]
+     },
+     {
+      "frame": 90,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 30,
+      "to": 90
+     }
+    ]
+   },
+   "hit1": {
+    "frames": 21,
+    "loop": false,
+    "events": [
+     {
+      "frame": 11,
+      "ops": [
+       {
+        "op": "spawn",
+        "fn": "doHit1"
+       }
+      ]
+     },
+     {
+      "frame": 21,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hit3": {
+    "frames": 101,
+    "loop": false,
+    "events": [
+     {
+      "frame": 101,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": [
+     {
+      "from": 42,
+      "to": 101
+     }
+    ]
+   },
+   "hit4": {
+    "frames": 39,
+    "loop": false,
+    "events": [
+     {
+      "frame": 39,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 7,
+    "loop": false,
+    "events": [
+     {
+      "frame": 7,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "drop"
+       },
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 16,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "boss26"
+  },
+  "specials": [
+   "level_scaling"
+  ],
+  "bullets": {
+   "hit1": {
+    "clip": "bullet_m26_1",
+    "frame": 11,
+    "offset": [
+     0,
+     0
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 1.667,
+    "radius": 60,
+    "rect_frames": [
+     [
+      -38.0,
+      -17.0,
+      55.0,
+      32.0
+     ],
+     [
+      -80.0,
+      -17.0,
+      57.0,
+      32.0
+     ],
+     [
+      -123.0,
+      -17.0,
+      57.0,
+      32.0
+     ],
+     [
+      -166.0,
+      -17.0,
+      57.0,
+      32.0
+     ],
+     [
+      -256.0,
+      -24.0,
+      120.0,
+      54.0
+     ],
+     [
+      -299.0,
+      -24.0,
+      120.0,
+      54.0
+     ],
+     [
+      -339.0,
+      -24.0,
+      111.0,
+      51.0
+     ],
+     [
+      -382.0,
+      -24.0,
+      112.0,
+      51.0
+     ],
+     [
+      -419.0,
+      -18.0,
+      100.0,
+      37.0
+     ],
+     [
+      -462.0,
+      -18.0,
+      100.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -22.0,
+      99.0,
+      41.0
+     ],
+     [
+      -504.0,
+      -22.0,
+      99.0,
+      41.0
+     ],
+     [
+      -504.0,
+      -22.0,
+      99.0,
+      44.0
+     ],
+     [
+      -504.0,
+      -22.0,
+      99.0,
+      44.0
+     ],
+     [
+      -504.0,
+      -23.0,
+      99.0,
+      49.0
+     ],
+     [
+      -504.0,
+      -23.0,
+      99.0,
+      49.0
+     ],
+     [
+      -504.0,
+      -23.0,
+      101.0,
+      52.0
+     ],
+     [
+      -504.0,
+      -23.0,
+      101.0,
+      52.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      99.0,
+      37.0
+     ],
+     [
+      -504.0,
+      -18.0,
+      98.0,
+      37.0
+     ],
+     [
+      -334.0,
+      -18.0,
+      98.0,
+      37.0
+     ]
+    ],
+    "damage": "hit1"
+   },
+   "hit4": {
+    "clip": "bullet_m26_2",
+    "frame": 0,
+    "offset": [
+     0,
+     -120
+    ],
+    "target_offset": [
+     -65,
+     0
+    ],
+    "vx": 0,
+    "vy": 0,
+    "life": 2.792,
+    "radius": 98,
+    "rect_frames": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     [
+      80,
+      152,
+      45,
+      32
+     ],
+     [
+      79,
+      143,
+      66,
+      49
+     ],
+     [
+      79,
+      111,
+      82,
+      81
+     ],
+     [
+      79,
+      95,
+      81,
+      97
+     ],
+     [
+      63,
+      88,
+      129,
+      96
+     ],
+     [
+      79,
+      63,
+      82,
+      129
+     ],
+     [
+      50,
+      0,
+      142,
+      192
+     ],
+     [
+      0,
+      0,
+      177,
+      192
+     ],
+     [
+      72,
+      0,
+      120,
+      192
+     ],
+     [
+      0,
+      24,
+      192,
+      168
+     ],
+     [
+      63,
+      0,
+      121,
+      192
+     ],
+     [
+      72,
+      0,
+      105,
+      192
+     ],
+     [
+      63,
+      0,
+      114,
+      192
+     ],
+     [
+      48,
+      0,
+      144,
+      192
+     ],
+     [
+      47,
+      0,
+      139,
+      192
+     ],
+     [
+      47,
+      0,
+      130,
+      192
+     ],
+     [
+      47,
+      0,
+      130,
+      192
+     ],
+     [
+      47,
+      0,
+      137,
+      192
+     ],
+     [
+      47,
+      0,
+      145,
+      192
+     ],
+     [
+      0,
+      0,
+      184,
+      192
+     ],
+     [
+      16,
+      0,
+      170,
+      192
+     ],
+     [
+      8,
+      0,
+      184,
+      192
+     ],
+     [
+      0,
+      0,
+      192,
+      192
+     ],
+     [
+      0,
+      0,
+      186,
+      192
+     ],
+     [
+      16,
+      0,
+      161,
+      192
+     ],
+     [
+      16,
+      0,
+      168,
+      192
+     ],
+     [
+      16,
+      0,
+      176,
+      184
+     ],
+     [
+      16,
+      0,
+      161,
+      177
+     ],
+     [
+      0,
+      0,
+      177,
+      177
+     ],
+     [
+      16,
+      0,
+      161,
+      177
+     ],
+     [
+      0,
+      0,
+      177,
+      168
+     ],
+     [
+      31,
+      15,
+      145,
+      177
+     ],
+     [
+      16,
+      15,
+      152,
+      177
+     ],
+     [
+      63,
+      40,
+      75,
+      152
+     ],
+     [
+      74,
+      95,
+      71,
+      97
+     ],
+     [
+      73,
+      128,
+      71,
+      64
+     ],
+     [
+      79,
+      0,
+      65,
+      192
+     ],
+     [
+      72,
+      0,
+      66,
+      192
+     ],
+     [
+      64,
+      0,
+      81,
+      192
+     ],
+     null
+    ],
+    "damage": "hit4"
+   }
+  },
+  "w": 91,
+  "h": 120,
+  "level_scale": {
+   "kind": "team_level",
+   "threshold": 20,
+   "true": {
+    "hp": 40000,
+    "def": 150,
+    "exp": 300,
+    "gxp": 100,
+    "attback": 0.2,
+    "attacks": {
+     "hit1": {
+      "power": 200
+     },
+     "hit2": {
+      "power": 35
+     },
+     "hit3": {
+      "power": 100,
+      "effect": {
+       "name": "ice",
+       "frames": 120
+      }
+     },
+     "hit4": {
+      "power": 300
+     }
+    }
+   },
+   "false": {
+    "hp": 12000,
+    "def": 50,
+    "exp": 150,
+    "gxp": 70,
+    "attback": 0.4,
+    "attacks": {
+     "hit1": {
+      "power": 90
+     },
+     "hit2": {
+      "power": 17
+     },
+     "hit3": {
+      "power": 20,
+      "effect": {
+       "name": "ice",
+       "frames": 48
+      }
+     },
+     "hit4": {
+      "power": 150
+     }
+    }
+   }
+  },
+  "colipse_bottom": 59.95
+ },
+ "27": {
+  "id": 27,
+  "name": "宝箱",
+  "cls": "Monster27",
+  "module": "Monster3_v3",
+  "is_boss": false,
+  "boss": false,
+  "is_fly": false,
+  "hp": 22100,
+  "def": 25,
+  "exp": 0,
+  "gxp": 0,
+  "speed": 0.0,
+  "walk_speed": 0.0,
+  "see": 300.0,
+  "range": 150.0,
+  "attback": 0.5,
+  "probability": 0.3,
+  "fallList": [
+   "tndblg",
+   "tndbthl",
+   "zcld"
+  ],
+  "attackPowers": [],
+  "attacks": {},
+  "hitbox": {
+   "w": 81.8,
+   "h": 58.99,
+   "ox": 0.0,
+   "oy": -0.05
+  },
+  "actions": {
+   "walk": {
+    "frames": 1,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   },
+   "hurt": {
+    "frames": 5,
+    "loop": false,
+    "events": [
+     {
+      "frame": 5,
+      "ops": [
+       {
+        "op": "end",
+        "state": "wait"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "dead": {
+    "frames": 25,
+    "loop": false,
+    "events": [
+     {
+      "frame": 25,
+      "ops": [
+       {
+        "op": "destroy"
+       }
+      ]
+     }
+    ],
+    "sticks": []
+   },
+   "wait": {
+    "frames": 1,
+    "loop": true,
+    "events": [],
+    "sticks": []
+   }
+  },
+  "ai": {
+   "type": "static"
+  },
+  "specials": [
+   "chest"
+  ],
+  "bullets": {},
+  "w": 57,
+  "h": 53,
+  "level_scale": {
+   "kind": "total_stage",
+   "hp": "20*T*T*T + 20*T*T + 100"
+  },
+  "colipse_bottom": 29.447
+ }
+}

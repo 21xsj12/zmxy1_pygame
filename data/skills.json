@@ -1,0 +1,269 @@
+{
+ "wukong": {
+  "name": "孙悟空",
+  "class": "战士",
+  "active": [
+   {
+    "id": "w1",
+    "name": "升龙斩",
+    "key": "↑J",
+    "slot_key": "skill0",
+    "cost": 100,
+    "mp": 10,
+    "action": "hit8",
+    "mult": 2.0,
+    "kind": "magic",
+    "kb": [
+     2,
+     -22
+    ],
+    "hit_max": 100,
+    "interval": 2,
+    "desc": "近身后用力将怪物挑到空中"
+   },
+   {
+    "id": "w2",
+    "name": "火炎突击",
+    "key": "→→J",
+    "slot_key": "skill1",
+    "cost": 200,
+    "mp": 20,
+    "action": "hit6",
+    "mult": 0.5,
+    "kind": "magic",
+    "kb": [
+     35,
+     -2
+    ],
+    "hit_max": 1,
+    "interval": 5,
+    "desc": "打退前方怪物并造成多次伤害"
+   },
+   {
+    "id": "w3",
+    "name": "烈焰闪",
+    "key": "U",
+    "slot_key": "skill2",
+    "cost": 500,
+    "mp": 30,
+    "action": "hit7",
+    "mult": 0.0,
+    "fixed": 100,
+    "kind": "magic",
+    "kb": [
+     0,
+     -2
+    ],
+    "hit_max": 1,
+    "interval": 4,
+    "desc": "向前冲刺对碰到的怪物造成伤害，冲刺过程处于无敌状态"
+   },
+   {
+    "id": "w4",
+    "name": "烈焰风暴",
+    "key": "I",
+    "slot_key": "skill3",
+    "cost": 1000,
+    "mp": 40,
+    "action": "hit9",
+    "mult": 1.2,
+    "kind": "magic",
+    "kb": [
+     20,
+     -2
+    ],
+    "hit_max": 100,
+    "interval": 2,
+    "desc": "快速旋转震开周围怪物并造成多次伤害"
+   },
+   {
+    "id": "w5",
+    "name": "火魔斩",
+    "key": "O",
+    "slot_key": "skill4",
+    "cost": 2000,
+    "mp": 50,
+    "action": "hit10",
+    "stages": [
+     [
+      1.0,
+      "physics",
+      [
+       2,
+       -3
+      ]
+     ],
+     [
+      3.0,
+      "magic",
+      [
+       40,
+       -15
+      ]
+     ],
+     [
+      1.0,
+      "magic",
+      [
+       40,
+       25
+      ]
+     ]
+    ],
+    "kind": "magic",
+    "hit_max": 100,
+    "interval": 999,
+    "desc": "冲向空中施放火魔九连斩，落地后为最后一斩，造成极高的伤害"
+   }
+  ],
+  "passive": [
+   {
+    "id": "wp1",
+    "name": "热血",
+    "effect": "hp",
+    "desc": "生命上限增加（每级累计 100×等级+100）"
+   },
+   {
+    "id": "wp2",
+    "name": "魔泉",
+    "effect": "mp",
+    "desc": "魔法上限增加（每级累计 100×等级+100）"
+   },
+   {
+    "id": "wp3",
+    "name": "狂暴",
+    "effect": "crit",
+    "desc": "暴击率增加（每级累计 1%×等级+1%）"
+   },
+   {
+    "id": "wp4",
+    "name": "光之永恒",
+    "effect": "hp_regen",
+    "desc": "每秒回复生命增加（每级 等级+1）"
+   },
+   {
+    "id": "wp5",
+    "name": "月之辉煌",
+    "effect": "mp_regen",
+    "desc": "每秒回复魔法增加（每级 等级+1）"
+   }
+  ]
+ },
+ "tangseng": {
+  "name": "唐僧",
+  "class": "法师",
+  "active": [
+   {
+    "id": "t1",
+    "name": "冰龙波",
+    "key": "长按J",
+    "slot_key": "skill0",
+    "cost": 100,
+    "mp": 20,
+    "action": "hit2",
+    "mult": 0.2,
+    "kind": "magic",
+    "kb": [
+     20,
+     -5
+    ],
+    "hit_max": 200,
+    "interval": 4,
+    "desc": "蓄气放出一条冰龙，对一条直线上的怪物造成伤害"
+   },
+   {
+    "id": "t2",
+    "name": "玄冰阵",
+    "key": "U",
+    "slot_key": "skill1",
+    "cost": 200,
+    "mp": 40,
+    "action": "hit3",
+    "mult": 0.8,
+    "kind": "magic",
+    "kb": [
+     6,
+     -7
+    ],
+    "hit_max": 200,
+    "interval": 999,
+    "desc": "在周围召唤玄冰阵，对范围内怪物造成多次伤害"
+   },
+   {
+    "id": "t3",
+    "name": "水幻影",
+    "key": "I",
+    "slot_key": "skill2",
+    "cost": 500,
+    "mp": 30,
+    "action": "shadow",
+    "desc": "召唤出幻影向前冲去，幻影继承某些技能的释放，\n可以随时传送到幻影位置"
+   },
+   {
+    "id": "t4",
+    "name": "天降甘露",
+    "key": "O",
+    "slot_key": "skill3",
+    "cost": 1000,
+    "mp": 60,
+    "action": "hit5",
+    "desc": "需要蓄气2秒，之后回复范围内自身和队友一定生\n命值"
+   },
+   {
+    "id": "t5",
+    "name": "水魔爆",
+    "key": "L",
+    "slot_key": "skill4",
+    "cost": 2000,
+    "mp": 100,
+    "action": "hit4",
+    "stages": [
+     [
+      8.0,
+      "magic",
+      [
+       25,
+       -5
+      ]
+     ]
+    ],
+    "kind": "magic",
+    "hit_max": 200,
+    "interval": 999,
+    "desc": "召唤出魔法阵，向空中引出一道光柱，对目标造成\n较大的伤害"
+   }
+  ],
+  "passive": [
+   {
+    "id": "tp1",
+    "name": "热血",
+    "effect": "hp",
+    "desc": "生命上限增加（每级累计 100×等级+100）"
+   },
+   {
+    "id": "tp2",
+    "name": "魔泉",
+    "effect": "mp",
+    "desc": "魔法上限增加（每级累计 100×等级+100）"
+   },
+   {
+    "id": "tp3",
+    "name": "狂暴",
+    "effect": "crit",
+    "desc": "暴击率增加（每级累计 1%×等级+1%）"
+   },
+   {
+    "id": "tp4",
+    "name": "光之永恒",
+    "effect": "hp_regen",
+    "desc": "每秒回复生命增加（每级 等级+1）"
+   },
+   {
+    "id": "tp5",
+    "name": "月之辉煌",
+    "effect": "mp_regen",
+    "desc": "每秒回复魔法增加（每级 等级+1）"
+   }
+  ]
+ }
+}

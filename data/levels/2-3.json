@@ -1,0 +1,870 @@
+{
+ "id": "2-3",
+ "name": "迦楼罗之穴",
+ "width": 4941.9,
+ "ground_y": 481.5,
+ "ground_art_delta": -6.4,
+ "player_start": {
+  "x": 200,
+  "y": 200
+ },
+ "background": "bg/2-3.png",
+ "background_x_offset": -245.0,
+ "background_y": -72.0,
+ "background_bbox": [
+  215.0,
+  25.0,
+  4941.9,
+  650.5
+ ],
+ "far_background": "bg/far2.png",
+ "ground": "",
+ "music": "bg2",
+ "camera_lock_offset": 900,
+ "stops": [
+  {
+   "idx": 0,
+   "x": 1013.8,
+   "y": 255.6,
+   "between_rand_l": 1150
+  },
+  {
+   "idx": 1,
+   "x": 1792.2,
+   "y": 287.1,
+   "between_rand_l": 1150
+  },
+  {
+   "idx": 2,
+   "x": 2808.4,
+   "y": 331.6,
+   "between_rand_l": 1150
+  },
+  {
+   "idx": 3,
+   "x": 4054.8,
+   "y": 307.6,
+   "between_rand_l": 1150
+  },
+  {
+   "idx": 4,
+   "x": 4522.9,
+   "y": 216.6,
+   "between_rand_l": 1150
+  }
+ ],
+ "spawns": [
+  {
+   "x": 2285.3,
+   "y": 287.1,
+   "enemy_type": 15,
+   "total": 5,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 669.0,
+   "y": 249.1,
+   "enemy_type": 15,
+   "total": 5,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 0,
+   "random": false
+  },
+  {
+   "x": 3385.6,
+   "y": 326.1,
+   "enemy_type": 15,
+   "total": 4,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 3555.7,
+   "y": 215.1,
+   "enemy_type": 13,
+   "total": 2,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 3264.8,
+   "y": 81.0,
+   "enemy_type": 13,
+   "total": 2,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 2985.5,
+   "y": 249.1,
+   "enemy_type": 13,
+   "total": 2,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 4465.9,
+   "y": 138.9,
+   "enemy_type": 9,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 4,
+   "random": false
+  },
+  {
+   "x": 1093.0,
+   "y": 387.6,
+   "enemy_type": 7,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 0,
+   "random": false
+  },
+  {
+   "x": 158.8,
+   "y": 321.1,
+   "enemy_type": 13,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 0,
+   "random": false
+  },
+  {
+   "x": 937.0,
+   "y": 343.0,
+   "enemy_type": 7,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 2027.2,
+   "y": 427.1,
+   "enemy_type": 13,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 2281.3,
+   "y": 427.1,
+   "enemy_type": 13,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 2533.2,
+   "y": 422.6,
+   "enemy_type": 13,
+   "total": 1,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 2857.4,
+   "y": 407.1,
+   "enemy_type": 13,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 4157.8,
+   "y": 407.1,
+   "enemy_type": 13,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 3,
+   "random": false
+  },
+  {
+   "x": 971.0,
+   "y": 134.9,
+   "enemy_type": 15,
+   "total": 5,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 1285.2,
+   "y": 393.1,
+   "enemy_type": 15,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 1854.1,
+   "y": 383.8,
+   "enemy_type": 13,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 1854.1,
+   "y": 402.1,
+   "enemy_type": 13,
+   "total": 2,
+   "interval": 2.0,
+   "delay": 2.0,
+   "stop_idx": 1,
+   "random": false
+  },
+  {
+   "x": 2833.4,
+   "y": 407.1,
+   "enemy_type": 7,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 1725.2,
+   "y": 351.0,
+   "enemy_type": 7,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 2,
+   "random": false
+  },
+  {
+   "x": 2733.4,
+   "y": 378.1,
+   "enemy_type": 7,
+   "total": 3,
+   "interval": 2.0,
+   "delay": 12.0,
+   "stop_idx": 3,
+   "random": false
+  }
+ ],
+ "boss": {
+  "x": 4465.9,
+  "y": 138.9,
+  "enemy_type": 9,
+  "stop_idx": 4
+ },
+ "portal": {
+  "x": 4266.6,
+  "y": 424.1,
+  "w": 186.0,
+  "h": 165.0
+ },
+ "walls": [
+  {
+   "x": -17.4,
+   "y": 481.5,
+   "w": 4695.3,
+   "h": 19.9,
+   "type": "solid"
+  },
+  {
+   "x": -8.7,
+   "y": -498.5,
+   "w": 60.1,
+   "h": 999.9,
+   "type": "solid"
+  },
+  {
+   "x": 4630.9,
+   "y": -509.4,
+   "w": 60.0,
+   "h": 999.9,
+   "type": "solid"
+  },
+  {
+   "x": 2867.2,
+   "y": 327.1,
+   "w": 247.6,
+   "h": 38.7,
+   "type": "oneway"
+  },
+  {
+   "x": 3141.9,
+   "y": 155.6,
+   "w": 247.6,
+   "h": 38.7,
+   "type": "oneway"
+  },
+  {
+   "x": 3452.4,
+   "y": 302.6,
+   "w": 247.7,
+   "h": 38.7,
+   "type": "oneway"
+  },
+  {
+   "x": 4382.7,
+   "y": 283.2,
+   "w": 247.7,
+   "h": 38.7,
+   "type": "oneway"
+  }
+ ],
+ "terrain": [],
+ "slopes": [],
+ "foreground": "",
+ "foreground_x": 0,
+ "foreground_y": 0,
+ "boss_enemy_type": 9,
+ "dungeon": null,
+ "deco": [
+  {
+   "kind": "shape",
+   "img": "bg/shapes/118.png",
+   "x": -7.55,
+   "y": 152.05,
+   "depth": 7,
+   "tag": "ground"
+  }
+ ],
+ "thorns": [
+  {
+   "x": 384.6,
+   "y": -27.8,
+   "w": 37.3,
+   "h": 63.9,
+   "depth": 8,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 428.3,
+   "y": -27.8,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 14,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 477.9,
+   "y": -27.8,
+   "w": 37.3,
+   "h": 63.9,
+   "depth": 20,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 527.4,
+   "y": -27.8,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 26,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 572.2,
+   "y": -27.8,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 32,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 618.9,
+   "y": -27.8,
+   "w": 37.3,
+   "h": 63.9,
+   "depth": 40,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1309.5,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 46,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1353.2,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 52,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1402.8,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 58,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1452.2,
+   "y": -27.3,
+   "w": 37.5,
+   "h": 63.9,
+   "depth": 64,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1497.2,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 70,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1543.8,
+   "y": -25.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 76,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1966.0,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 82,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 2010.9,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 94,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 2057.5,
+   "y": -25.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 100,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 2464.6,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 106,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 2509.4,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 112,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 2556.1,
+   "y": -25.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 118,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 3444.4,
+   "y": -29.2,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 124,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 3493.9,
+   "y": -29.2,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 130,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 3538.8,
+   "y": -29.2,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 136,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 3585.4,
+   "y": -27.3,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 142,
+   "is_up": true,
+   "flip": false
+  },
+  {
+   "x": 1830.3,
+   "y": 429.1,
+   "w": 37.5,
+   "h": 63.8,
+   "depth": 148,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 1875.2,
+   "y": 429.1,
+   "w": 37.5,
+   "h": 63.8,
+   "depth": 154,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 1921.8,
+   "y": 427.2,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 160,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2089.4,
+   "y": 427.2,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 166,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2134.3,
+   "y": 427.2,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 172,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2180.9,
+   "y": 425.3,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 178,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2344.6,
+   "y": 429.1,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 184,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2389.5,
+   "y": 429.1,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 190,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2436.1,
+   "y": 427.2,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 196,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2574.7,
+   "y": 427.2,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 202,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2619.6,
+   "y": 427.2,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 208,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 2666.2,
+   "y": 425.3,
+   "w": 37.4,
+   "h": 63.8,
+   "depth": 214,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 3208.1,
+   "y": 421.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 220,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 3257.6,
+   "y": 421.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 226,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 3307.1,
+   "y": 421.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 232,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 3352.0,
+   "y": 421.4,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 238,
+   "is_up": false,
+   "flip": true
+  },
+  {
+   "x": 3398.6,
+   "y": 419.5,
+   "w": 37.4,
+   "h": 63.9,
+   "depth": 244,
+   "is_up": false,
+   "flip": true
+  }
+ ],
+ "water": [],
+ "turnbacks": [],
+ "no_continue": [],
+ "disappear_points": [
+  {
+   "x": 670.0,
+   "y": 253.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 293
+  },
+  {
+   "x": 1094.0,
+   "y": 391.6,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 301
+  },
+  {
+   "x": 159.7,
+   "y": 325.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 305
+  },
+  {
+   "x": 938.0,
+   "y": 347.0,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 313
+  },
+  {
+   "x": 972.0,
+   "y": 138.9,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 317
+  },
+  {
+   "x": 1286.2,
+   "y": 397.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 321
+  },
+  {
+   "x": 1855.1,
+   "y": 387.8,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 357
+  },
+  {
+   "x": 1855.1,
+   "y": 406.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 361
+  },
+  {
+   "x": 2286.3,
+   "y": 291.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 373
+  },
+  {
+   "x": 2028.3,
+   "y": 431.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 377
+  },
+  {
+   "x": 2282.3,
+   "y": 431.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 381
+  },
+  {
+   "x": 2534.2,
+   "y": 426.6,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 389
+  },
+  {
+   "x": 2858.4,
+   "y": 411.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 393
+  },
+  {
+   "x": 2834.4,
+   "y": 411.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 397
+  },
+  {
+   "x": 1726.2,
+   "y": 355.0,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 401
+  },
+  {
+   "x": 3386.6,
+   "y": 330.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 409
+  },
+  {
+   "x": 3556.7,
+   "y": 219.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 413
+  },
+  {
+   "x": 3265.8,
+   "y": 85.0,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 417
+  },
+  {
+   "x": 2986.5,
+   "y": 253.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 421
+  },
+  {
+   "x": 4158.8,
+   "y": 411.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 425
+  },
+  {
+   "x": 2734.4,
+   "y": 382.1,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 429
+  },
+  {
+   "x": 4466.9,
+   "y": 142.9,
+   "w": 49.0,
+   "h": 73.0,
+   "depth": 437
+  }
+ ]
+}
